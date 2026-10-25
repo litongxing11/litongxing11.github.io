@@ -30,6 +30,17 @@
 .hero-art.profile-portrait img{aspect-ratio:1;object-fit:cover;max-height:none;border-radius:120px 120px 3px 3px}
 .header nav a[aria-current="page"]{color:var(--accent);text-decoration:underline;text-underline-offset:6px}
 .athletics-main{padding-block:55px 65px}
+.asu-story{margin-bottom:50px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.asu-summary{max-width:760px;color:var(--muted)}
+.asu-gallery{display:grid;grid-template-columns:1.35fr 1fr;gap:35px;align-items:start;margin-top:30px}
+.asu-gallery figure{margin:0;min-width:0}
+.asu-gallery img{width:100%;height:auto;border-radius:4px}
+.asu-gallery a{display:block}
+.asu-gallery figcaption{padding-block:22px}
+.asu-gallery figcaption .eyebrow{margin-bottom:12px}
+.asu-gallery h3{font-family:Georgia,serif;font-size:28px;font-weight:400}
+.asu-gallery figcaption p:not(.eyebrow){color:var(--muted);margin-bottom:0}
+@media(max-width:760px){.asu-gallery{grid-template-columns:1fr;gap:18px}.asu-story{margin-bottom:30px}.asu-gallery figcaption{padding-block:20px}}
 .athletics-intro{max-width:760px;margin-bottom:55px}
 .athletics-intro .back-link{font-size:12px;margin-bottom:38px}
 .athletics-intro h1{font-size:clamp(44px,5.8vw,72px)}
