@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">Edge contraction and biclique partitions</title>
+<desc id="desc">A triangle is partitioned into a purple single edge and a green two-edge star. Contracting the purple edge gives a simple graph with two vertices and one edge. The biclique partition number changes from two to one in this illustrative example.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#60746b"/></marker></defs>
+<rect width="1200" height="650" fill="#f6f3eb"/>
+<g font-family="Arial, sans-serif" fill="#193d35">
+<text x="60" y="60" font-size="17" letter-spacing="3" fill="#60746b">GRAPH THEORY / ILLUSTRATIVE EXAMPLE</text>
+<text x="60" y="110" font-size="34" font-weight="600">One contraction. A different decomposition.</text>
+<rect x="60" y="155" width="440" height="355" rx="12" fill="#fff" stroke="#d4dcd1"/>
+<rect x="700" y="155" width="440" height="355" rx="12" fill="#fff" stroke="#d4dcd1"/>
+<text x="85" y="195" font-size="21" font-weight="600">Original graph G = K₃</text>
+<path d="M175 265 375 265" fill="none" stroke="#784b64" stroke-width="8"/>
+<path d="M175 265 275 405 375 265" fill="none" stroke="#268578" stroke-width="8"/>
+<g fill="#fff" stroke="#193d35" stroke-width="3"><circle cx="175" cy="265" r="21"/><circle cx="375" cy="265" r="21"/><circle cx="275" cy="405" r="21"/></g>
+<g font-size="23" text-anchor="middle"><text x="175" y="273">u</text><text x="375" y="273">v</text><text x="275" y="413">w</text></g>
+<text x="280" y="470" font-size="22" text-anchor="middle">bp(K₃) = 2</text>
+<path d="M530 325H670" stroke="#60746b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="600" y="277" font-size="19" text-anchor="middle">contract uv</text>
+<text x="600" y="365" font-size="17" text-anchor="middle" fill="#60746b">merge u and v</text>
+<text x="725" y="195" font-size="21" font-weight="600">Contracted simple graph G / uv</text>
+<path d="M815 325H1025" stroke="#268578" stroke-width="8"/>
+<g fill="#fff" stroke="#193d35" stroke-width="3"><circle cx="815" cy="325" r="25"/><circle cx="1025" cy="325" r="25"/></g>
+<g font-size="23" text-anchor="middle"><text x="815" y="333">x</text><text x="1025" y="333">w</text></g>
+<text x="815" y="380" font-size="17" text-anchor="middle" fill="#60746b">x = {u, v}</text>
+<text x="920" y="470" font-size="22" text-anchor="middle">bp(K₂) = 1</text>
+<path d="M85 555H120" stroke="#784b64" stroke-width="7"/><text x="135" y="562" font-size="19">B₁ = {uv} : K₁,₁</text>
+<path d="M420 555H455" stroke="#268578" stroke-width="7"/><text x="470" y="562" font-size="19">B₂ = {uw, vw} : K₁,₂</text>
+<text x="60" y="610" font-size="17" fill="#60746b">Colors identify edge-disjoint bicliques. Parallel edges are merged after contraction.</text>
+</g></svg>
