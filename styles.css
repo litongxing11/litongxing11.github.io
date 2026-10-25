@@ -38,6 +38,26 @@
 .esports-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
 .research-poster{margin:28px 0 0}
 .feature-visual{margin:0;min-width:0}
+/* A calm entrance on every page, with native crossfades where supported. */
+@view-transition{navigation:auto}
+@keyframes page-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes page-leave{from{opacity:1}to{opacity:0}}
+main{animation:page-enter 600ms cubic-bezier(.22,1,.36,1) both}
+.native-page-transition main{animation:none}
+.header{view-transition-name:site-header}
+::view-transition-old(root){animation:page-leave 180ms ease-out both}
+::view-transition-new(root){animation:page-enter 600ms cubic-bezier(.22,1,.36,1) both}
+::view-transition-group(site-header){animation:none}
+::view-transition-old(site-header){animation:none;opacity:0}
+::view-transition-new(site-header){animation:none}
+.header nav a,.text-link{transition:color 180ms ease}
+.directory-card{transition:background-color 180ms ease,border-color 180ms ease}
+@media(prefers-reduced-motion:reduce){
+  @view-transition{navigation:none}
+  main,.native-page-transition main{animation:none}
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}
+  .header nav a,.text-link,.directory-card{transition:none}
+}
 .feature-visual figcaption{font-size:11px;color:var(--muted);margin-top:9px}
 .research-poster img{width:100%;border:1px solid var(--line);border-radius:4px}
 .research-poster figcaption{font-size:12px;color:var(--muted);margin-top:12px}
