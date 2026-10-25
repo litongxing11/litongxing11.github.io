@@ -3,7 +3,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const pages=['index.html',...fs.readdirSync(path.join(root,'projects')).filter(n=>n.endsWith('.html')).map(n=>'projects/'+n)];
+const pages=[...fs.readdirSync(root).filter(n=>n.endsWith('.html')),...fs.readdirSync(path.join(root,'projects')).filter(n=>n.endsWith('.html')).map(n=>'projects/'+n)];
 const problems=[];
 for(const file of pages){
  const source=fs.readFileSync(path.join(root,file),'utf8');

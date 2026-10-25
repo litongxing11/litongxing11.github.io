@@ -5,3 +5,25 @@
 @media(max-width:1000px){.header{align-items:flex-start;flex-direction:column;gap:18px}.hero{gap:35px}.publication-layout{gap:35px}.community-columns,.community-more{gap:35px}}
 @media(max-width:760px){.hero h1{font-size:61px}.hero-line{font-size:24px}.hero{padding-block:38px 46px}.header nav{gap:17px;font-size:11px}.hero-art{max-width:none}.hero-art img{max-height:370px;object-position:center 48%}.hero-note{margin-bottom:2px}.publication-layout,.community-columns,.community-more{grid-template-columns:1fr;gap:25px}.publication-layout h2 br,.beyond h2 br{display:none}.research-list .work-row{grid-template-columns:23px minmax(0,1fr);gap:15px}.research-list .work-row>span:last-child{grid-column:2;text-align:left}.research-list h3{font-size:23px}.honors-list>div{grid-template-columns:1fr;gap:8px}.education-note{padding:24px}.project-meta{grid-template-columns:1fr;gap:18px}.project-summary{font-size:19px}.project-main{padding-block:35px}.project-main .eyebrow{margin-top:30px}.hero-links{gap:20px}.community-columns h3:not(:first-of-type){margin-top:28px}}
 @media(max-width:760px){.header nav{display:grid;grid-template-columns:repeat(3,max-content);column-gap:25px;row-gap:9px;font-size:12px}}
+
+/* Portrait and athletics photo journal. */
+.hero-art.profile-portrait img{aspect-ratio:1;object-fit:cover;max-height:none;border-radius:120px 120px 3px 3px}
+.header nav a[aria-current="page"]{color:var(--accent);text-decoration:underline;text-underline-offset:6px}
+.athletics-main{padding-block:55px 65px}
+.athletics-intro{max-width:760px;margin-bottom:55px}
+.athletics-intro .back-link{font-size:12px;margin-bottom:38px}
+.athletics-intro h1{font-size:clamp(44px,5.8vw,72px)}
+.athletics-lead{font-family:Georgia,serif;font-size:26px;line-height:1.4}
+.athletics-intro>p:last-child{max-width:620px;color:var(--muted);font-size:17px}
+.athletics-gallery{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.gallery-heading{grid-column:1/-1;border-top:1px solid var(--line);padding-top:35px}
+.athletics-gallery figure{margin:0;min-width:0}
+.photo-link{display:block;background:var(--light);border-radius:4px;overflow:hidden}
+.photo-link img{width:100%;aspect-ratio:2/3;object-fit:contain}
+.athletics-gallery figcaption{padding:24px 0}
+.athletics-gallery figcaption .eyebrow{display:block;margin-bottom:12px}
+.athletics-gallery h3{font-family:Georgia,serif;font-weight:400;font-size:28px}
+.athletics-gallery figcaption p{color:var(--muted);max-width:470px}
+.athletics-navigation{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:30px;margin-top:20px}
+@media(max-width:760px){.hero .hero-art.profile-portrait{grid-row:1;max-width:260px}.hero-art.profile-portrait figcaption{text-align:center;font-size:12px}}
+@media(max-width:760px){.hero-art.profile-portrait{max-width:430px;width:100%;margin-inline:auto}.hero-art.profile-portrait img{border-radius:90px 90px 3px 3px}.athletics-main{padding-block:35px 42px}.athletics-intro{margin-bottom:35px}.athletics-intro h1 br{display:none}.athletics-gallery{grid-template-columns:1fr;gap:16px}.athletics-gallery figcaption{padding-block:20px}.athletics-lead{font-size:23px}}
