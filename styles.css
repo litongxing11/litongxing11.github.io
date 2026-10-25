@@ -118,3 +118,18 @@ main{animation:page-enter 600ms cubic-bezier(.22,1,.36,1) both}
 .project-photo img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
 .project-photo figcaption{font-size:11px;color:var(--muted);margin-top:9px}
 @media(max-width:760px){.research-feature{padding-top:30px;margin-bottom:30px}.project-photo{margin-block:28px}}
+
+/* Complete language editions share the same layout and readable navigation. */
+.header .brand{flex-shrink:0}
+.header-controls{display:flex;flex-direction:column;align-items:flex-end;gap:12px;min-width:0}
+.header-controls nav{flex-wrap:wrap;justify-content:flex-end;gap:10px 20px}
+.language-switch{display:flex;align-items:center;gap:0;font-size:11px;line-height:1.4}
+.language-switch a{padding:4px 10px;text-decoration:none;color:var(--muted);border-right:1px solid var(--line)}
+.language-switch a:first-child{padding-left:0}
+.language-switch a:last-child{padding-right:0;border-right:0}
+.language-switch a:hover,.language-switch a[aria-current="page"]{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+:lang(zh-Hans) body{font-family:Arial,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.85}
+:lang(zh-Hans) h1,:lang(zh-Hans) h2{font-family:Georgia,"Songti SC","STSong",serif;letter-spacing:0;line-height:1.3}
+:lang(zh-Hans) .eyebrow{letter-spacing:.1em}
+@media(max-width:900px){.header{align-items:flex-start}.header-controls nav{gap:9px 15px}}
+@media(max-width:760px){.header-controls{align-items:flex-start;gap:15px;width:100%}.header-controls nav{justify-content:flex-start}.language-switch{font-size:12px}.language-switch a{padding-block:5px}}

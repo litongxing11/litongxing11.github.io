@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Un projet de modélisation quantitative étudiant l’empreinte énergétique, carbone et hydrique du calcul haute performance."><meta name="theme-color" content="#193d35"><title>Le coût environnemental du calcul — Tony Xing</title><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../../styles.css?v=20261025-1">
+  <link rel="canonical" href="https://litongxing11.github.io/fr/projects/computing-footprint.html">
+  <link rel="alternate" hreflang="en" href="https://litongxing11.github.io/projects/computing-footprint.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://litongxing11.github.io/zh/projects/computing-footprint.html">
+  <link rel="alternate" hreflang="fr" href="https://litongxing11.github.io/fr/projects/computing-footprint.html">
+  <link rel="alternate" hreflang="x-default" href="https://litongxing11.github.io/projects/computing-footprint.html">
+</head>
+<body><a class="skip" href="#main">Aller au contenu</a><header class="header wrap"><a class="brand" href="../index.html?v=20261025-1">TONY XING<span>MATHÉMATIQUES ET INFORMATIQUE</span></a><div class="header-controls"><nav aria-label="Navigation principale"><a href="../index.html?v=20261025-1">Accueil</a><a href="../research.html?v=20261025-1" aria-current="page">Recherche</a><a href="../experience.html?v=20261025-1">Parcours</a><a href="../community.html?v=20261025-1">Engagement</a><a href="../honors.html?v=20261025-1">Distinctions</a><a href="../athletics.html?v=20261025-1">Sport</a><a href="../contact.html?v=20261025-1">Contact</a></nav><div class="language-switch" role="group" aria-label="Choisir la langue"><a href="../../projects/computing-footprint.html?v=20261025-1" data-language="en" lang="en" hreflang="en">English</a><a href="../../zh/projects/computing-footprint.html?v=20261025-1" data-language="zh-Hans" lang="zh-Hans" hreflang="zh-Hans">简体中文</a><a href="computing-footprint.html?v=20261025-1" data-language="fr" lang="fr" hreflang="fr" aria-current="page">Français</a></div></div></header>
+<main id="main" class="wrap project-main">
+  <a class="text-link back-link" href="../research.html?v=20261025-1">← Retour aux recherches</a>
+  <p class="eyebrow">PRÉVISION ET MODÉLISATION ENVIRONNEMENTALE</p>
+  <h1>Le coût environnemental du calcul haute performance.</h1>
+  <p class="project-summary">J’ai dirigé une étude de modélisation à deux sur la manière dont les centres de données relient la demande de calcul à la consommation d’électricité, aux émissions de carbone et à l’eau de refroidissement.</p>
+  <dl class="project-meta">
+    <div><dt>Période</dt><dd>10e année · 2024</dd></div>
+    <div><dt>Thème</dt><dd>Modélisation environnementale</dd></div>
+    <div><dt>Mon rôle</dt><dd>Responsable d’une équipe de deux</dd></div>
+  </dl>
+<figure class="project-photo"><a href="../../assets/illustrations/hpc-cooling-infrastructure.jpg" target="_blank" rel="noopener" aria-label="Ouvrir la photographie conceptuelle de recherche en grand format"><img src="../../assets/illustrations/hpc-cooling-infrastructure.jpg" width="1536" height="1024" alt="Gros plan conceptuel généré par IA d’un module informatique refroidi par liquide, avec plaques froides en cuivre, tuyaux et cartes électroniques." decoding="async"></a><figcaption>Image conceptuelle générée par IA.</figcaption></figure>
+
+
+
+  <section aria-labelledby="question-title">
+    <h2 id="question-title">La question</h2>
+    <p>Avec la croissance de la demande de calcul, comment son empreinte environnementale pourrait-elle évoluer ? Nous avons étudié la demande d’électricité, les sources qui l’alimentent et la consommation d’eau pour explorer les possibilités d’amélioration de l’efficacité.</p>
+  </section>
+<figure class="project-visual"><a href="../../assets/visuals/computing-energy-forecast.png" target="_blank" rel="noopener" aria-label="Ouvrir le visuel de recherche en grand format"><img src="../../assets/visuals/computing-energy-forecast.png" width="1422" height="742" alt="Parts historiques et prévues des combustibles fossiles et des énergies renouvelables avec le nucléaire dans la production mondiale d’électricité jusqu’en 2030." decoding="async"></a><figcaption>Prévision du mix électrique issue de notre étude. La ligne pointillée marque le début des prévisions ; le modèle prévoit environ 45 % de production renouvelable et nucléaire en 2030.</figcaption></figure>
+  <section aria-labelledby="approach-title">
+    <h2 id="approach-title">Notre méthode de modélisation</h2>
+    <ul>
+      <li><strong>Comparer les prévisions.</strong> Nous avons comparé les modèles AR, MA, ARMA, ARIMA, SARIMA et Holt-Winters pour prévoir la demande d’électricité et les tendances d’efficacité opérationnelle, en rapportant l’erreur quadratique moyenne et l’erreur absolue moyenne.</li>
+      <li><strong>Prévoir le mix électrique.</strong> À partir des données de production de 1985 à 2023, nous avons sélectionné les ordres ARIMA et les tendances selon le critère d’information d’Akaike (AIC), puis prévu jusqu’en 2030 la production fossile et celle des renouvelables avec le nucléaire.</li>
+      <li><strong>Explorer les émissions.</strong> Un modèle linéaire généralisé gaussien reliait les émissions de carbone à la consommation d’électricité, à la production par source, à la consommation retardée et à une interaction entre production fossile et renouvelable.</li>
+      <li><strong>Étendre l’analyse à l’eau.</strong> Nous avons comparé des projections de séries temporelles fondées sur les données de consommation d’eau de 2012 à 2021, en examinant l’influence du choix du modèle sur les perspectives de refroidissement.</li>
+    </ul>
+  </section>
+  <section aria-labelledby="findings-title">
+    <h2 id="findings-title">Ce que montrent les modèles</h2>
+    <div class="project-callout"><p>Notre prévision du mix électrique estimait à environ 45 % la part des renouvelables et du nucléaire dans la production mondiale en 2030. Cette projection reposait sur les tendances historiques ajustées.</p></div>
+    <p>Les prévisions variaient fortement selon le modèle. Pour l’eau, AR prévoyait une croissance rapide, ARIMA et SARIMA des hausses plus modérées, et d’autres modèles des trajectoires stables ou décroissantes. Cet écart soulignait l’importance du choix du modèle dans l’interprétation des résultats.</p>
+    <p>La régression des émissions présentait aussi des limites : les coefficients autres que l’ordonnée à l’origine n’atteignaient pas le seuil de significativité de 5 %. Nous les avons considérés comme des associations exploratoires, sans en déduire d’effets causaux.</p>
+  </section>
+  <section aria-labelledby="recommendations-title">
+    <h2 id="recommendations-title">Des modèles aux recommandations</h2>
+    <p>Nous avons proposé d’améliorer le refroidissement et l’utilisation des serveurs, d’adopter du matériel adapté aux charges de travail et de recourir à un ordonnancement tenant compte de l’énergie. Nous avons aussi étudié une électricité plus propre et la récupération de chaleur des serveurs pour les bâtiments voisins ou l’industrie.</p>
+    <p>Ce projet a renforcé l’intérêt d’étudier ensemble l’électricité, les émissions et l’eau pour évaluer les infrastructures de calcul.</p>
+  </section>
+  <section aria-labelledby="output-title">
+    <h2 id="output-title">Mon rôle et les résultats</h2>
+    <p>J’ai dirigé cette équipe de deux. Notre rapport de 25 pages réunit comparaisons de modèles, prévisions du mix électrique, analyse des émissions, projections de consommation d’eau et recommandations pratiques.</p>
+  </section>
+  <section aria-labelledby="methods-title">
+    <h2 id="methods-title">Méthodes</h2>
+    <p class="project-methods">Prévision de séries temporelles · ARIMA et SARIMA · Holt-Winters · Sélection par AIC · Modèle linéaire généralisé gaussien · Comparaison des erreurs de prévision</p>
+  </section>
+  <div class="project-navigation"><a class="text-link" href="../research.html?v=20261025-1">Toutes les recherches ↗</a><a class="text-link" href="medicine-ai.html?v=20261025-1">Projet suivant →</a></div>
+</main>
+<footer class="wrap footer">
+  <div class="footer-contacts" role="group" aria-label="Coordonnées et profils académiques">
+    <a href="mailto:tong_xing666@126.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>E-mail</span></a>
+    <a href="https://scholar.google.com/citations?user=U0z0-HwAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-6 10 6-10 6L2 9Z"/><path d="M6 11.5V17c3.5 2.7 8.5 2.7 12 0v-5.5M22 9v8"/></svg><span>Google Scholar</span></a>
+    <a href="https://www.linkedin.com/in/litong-xing-954129383/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.4 8.4H2.2V22h3.2V8.4ZM3.8 2A1.9 1.9 0 1 0 3.8 5.8 1.9 1.9 0 0 0 3.8 2ZM22 13.5c0-3.7-2-5.4-4.7-5.4a4.1 4.1 0 0 0-3.7 2V8.4h-3.2V22h3.2v-7.6c0-2 1-3.1 2.6-3.1s2.6 1.1 2.6 3.1V22H22v-8.5Z"/></svg><span>LinkedIn</span></a>
+  </div>
+  <span class="footer-copyright">© <span id="year">2026</span> Litong (Tony) Xing</span>
+</footer><script src="../../script.js?v=20261025-1"></script></body></html>

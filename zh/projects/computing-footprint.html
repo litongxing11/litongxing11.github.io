@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="一项定量建模研究，考察高性能计算的能源、碳排放与水足迹。"><meta name="theme-color" content="#193d35"><title>计算的环境成本 — Tony Xing</title><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../../styles.css?v=20261025-1">
+  <link rel="canonical" href="https://litongxing11.github.io/zh/projects/computing-footprint.html">
+  <link rel="alternate" hreflang="en" href="https://litongxing11.github.io/projects/computing-footprint.html">
+  <link rel="alternate" hreflang="zh-Hans" href="https://litongxing11.github.io/zh/projects/computing-footprint.html">
+  <link rel="alternate" hreflang="fr" href="https://litongxing11.github.io/fr/projects/computing-footprint.html">
+  <link rel="alternate" hreflang="x-default" href="https://litongxing11.github.io/projects/computing-footprint.html">
+</head>
+<body><a class="skip" href="#main">跳至正文</a><header class="header wrap"><a class="brand" href="../index.html?v=20261025-1">TONY XING<span>数学与计算机科学</span></a><div class="header-controls"><nav aria-label="主导航"><a href="../index.html?v=20261025-1">首页</a><a href="../research.html?v=20261025-1" aria-current="page">研究</a><a href="../experience.html?v=20261025-1">经历</a><a href="../community.html?v=20261025-1">社区</a><a href="../honors.html?v=20261025-1">荣誉</a><a href="../athletics.html?v=20261025-1">体育</a><a href="../contact.html?v=20261025-1">联系</a></nav><div class="language-switch" role="group" aria-label="选择语言"><a href="../../projects/computing-footprint.html?v=20261025-1" data-language="en" lang="en" hreflang="en">English</a><a href="computing-footprint.html?v=20261025-1" data-language="zh-Hans" lang="zh-Hans" hreflang="zh-Hans" aria-current="page">简体中文</a><a href="../../fr/projects/computing-footprint.html?v=20261025-1" data-language="fr" lang="fr" hreflang="fr">Français</a></div></div></header>
+<main id="main" class="wrap project-main">
+  <a class="text-link back-link" href="../research.html?v=20261025-1">← 返回研究</a>
+  <p class="eyebrow">预测与环境建模</p>
+  <h1>高性能计算的环境成本。</h1>
+  <p class="project-summary">我带领一项双人建模研究，分析数据中心如何将计算需求与电力消耗、碳排放和冷却用水联系起来。</p>
+  <dl class="project-meta">
+    <div><dt>时间</dt><dd>十年级 · 2024 年</dd></div>
+    <div><dt>研究重点</dt><dd>环境建模</dd></div>
+    <div><dt>我的职责</dt><dd>双人团队负责人</dd></div>
+  </dl>
+<figure class="project-photo"><a href="../../assets/illustrations/hpc-cooling-infrastructure.jpg" target="_blank" rel="noopener" aria-label="打开完整概念研究照片"><img src="../../assets/illustrations/hpc-cooling-infrastructure.jpg" width="1536" height="1024" alt="AI 生成的概念特写照片：含铜冷板、冷却液管路和电路板的液冷计算模块。" decoding="async"></a><figcaption>AI 生成的概念图像。</figcaption></figure>
+
+
+
+  <section aria-labelledby="question-title">
+    <h2 id="question-title">研究问题</h2>
+    <p>随着计算需求增长，其环境足迹会如何变化？我们考察电力需求、供电能源结构和用水量，探索提高效率可能发挥作用的环节。</p>
+  </section>
+<figure class="project-visual"><a href="../../assets/visuals/computing-energy-forecast.png" target="_blank" rel="noopener" aria-label="打开完整研究图表"><img src="../../assets/visuals/computing-energy-forecast.png" width="1422" height="742" alt="截至 2030 年，化石燃料以及可再生能源加核能在全球发电量中占比的历史数据与预测。" decoding="async"></a><figcaption>研究中的电力结构预测。虚线标示预测起点；模型预计到 2030 年，可再生能源加核能约占发电量的 45%。</figcaption></figure>
+  <section aria-labelledby="approach-title">
+    <h2 id="approach-title">我们如何建模</h2>
+    <ul>
+      <li><strong>比较预测。</strong> 我们比较了 AR、MA、ARMA、ARIMA、SARIMA 和 Holt-Winters 模型对电力需求与运行效率趋势的预测，并同时报告均方误差和平均绝对误差。</li>
+      <li><strong>预测电力结构。</strong> 利用 1985—2023 年发电数据，我们根据赤池信息准则（AIC）搜索 ARIMA 阶数与趋势设定，再将化石燃料发电量和可再生能源加核能发电量预测至 2030 年。</li>
+      <li><strong>探索排放。</strong> 采用高斯广义线性模型，将碳排放与电力消耗、分能源来源的发电量、滞后用电量，以及化石燃料与可再生能源发电量之间的交互项联系起来。</li>
+      <li><strong>扩展至用水。</strong> 我们利用 2012—2021 年的历史用水数据比较时间序列预测，考察模型选择如何改变对冷却需求的判断。</li>
+    </ul>
+  </section>
+  <section aria-labelledby="findings-title">
+    <h2 id="findings-title">模型揭示了什么</h2>
+    <div class="project-callout"><p>我们的电力结构预测预计，到 2030 年，可再生能源加核能约占全球发电量的 45%。这一预测建立在拟合的历史趋势之上。</p></div>
+    <p>不同模型给出的预测差异明显。在用水方面，AR 预测快速增长，ARIMA 和 SARIMA 预测较温和的增长，其他模型则给出较平稳或下降的路径。这种差异说明，模型选择对结果解读至关重要。</p>
+    <p>排放回归也有局限：除截距外，各系数均未达到 5% 的显著性水平。因此，我们将这些估计视为探索性关联，而非因果效应的证据。</p>
+  </section>
+  <section aria-labelledby="recommendations-title">
+    <h2 id="recommendations-title">从模型到建议</h2>
+    <p>我们建议提高冷却效率和服务器利用率，采用适合特定工作负载的硬件，以及使用能耗感知调度。我们还考虑了更清洁的电力供应，并回收服务器余热用于附近建筑或工业过程。</p>
+    <p>这个项目使我更加认识到，评估计算基础设施时，应将电力、排放和用水结合考虑。</p>
+  </section>
+  <section aria-labelledby="output-title">
+    <h2 id="output-title">我的职责与成果</h2>
+    <p>我带领这支双人团队。我们的 25 页报告整合了模型比较、电力结构预测、排放分析、用水预测及实际建议。</p>
+  </section>
+  <section aria-labelledby="methods-title">
+    <h2 id="methods-title">方法</h2>
+    <p class="project-methods">时间序列预测 · ARIMA 与 SARIMA · Holt-Winters · AIC 模型选择 · 高斯广义线性模型 · 预测误差比较</p>
+  </section>
+  <div class="project-navigation"><a class="text-link" href="../research.html?v=20261025-1">全部研究 ↗</a><a class="text-link" href="medicine-ai.html?v=20261025-1">下一个项目 →</a></div>
+</main>
+<footer class="wrap footer">
+  <div class="footer-contacts" role="group" aria-label="联系方式与学术主页">
+    <a href="mailto:tong_xing666@126.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>邮箱</span></a>
+    <a href="https://scholar.google.com/citations?user=U0z0-HwAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-6 10 6-10 6L2 9Z"/><path d="M6 11.5V17c3.5 2.7 8.5 2.7 12 0v-5.5M22 9v8"/></svg><span>Google 学术</span></a>
+    <a href="https://www.linkedin.com/in/litong-xing-954129383/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.4 8.4H2.2V22h3.2V8.4ZM3.8 2A1.9 1.9 0 1 0 3.8 5.8 1.9 1.9 0 0 0 3.8 2ZM22 13.5c0-3.7-2-5.4-4.7-5.4a4.1 4.1 0 0 0-3.7 2V8.4h-3.2V22h3.2v-7.6c0-2 1-3.1 2.6-3.1s2.6 1.1 2.6 3.1V22H22v-8.5Z"/></svg><span>LinkedIn</span></a>
+  </div>
+  <span class="footer-copyright">© <span id="year">2026</span> Litong (Tony) Xing</span>
+</footer><script src="../../script.js?v=20261025-1"></script></body></html>
