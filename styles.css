@@ -38,8 +38,8 @@
 .esports-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
 .research-poster{margin:28px 0 0}
 .feature-visual{margin:0;min-width:0}
-.home-education .education-note{margin-top:0;margin-bottom:50px}
-.home-education h2{font-family:Arial,"Microsoft YaHei",sans-serif;font-size:25px;font-weight:700;line-height:1.25;margin-bottom:8px}
+.intro a{text-underline-offset:3px;text-decoration-thickness:1px}
+.intro a:hover{color:var(--accent)}
 /* A calm entrance on every page, with native crossfades where supported. */
 @view-transition{navigation:auto}
 @keyframes page-enter{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
