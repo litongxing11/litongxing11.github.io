@@ -8,7 +8,13 @@ window.addEventListener('pagereveal', (event) => {
 
 // Keep links to the former homepage sections useful after the move to subpages.
 const sectionPages = ['research', 'publication', 'experience', 'community', 'honors', 'beyond', 'contact'];
-const section = window.location.hash.slice(1);
-if ((window.location.pathname.endsWith('/') || window.location.pathname.endsWith('/index.html')) && sectionPages.includes(section)) {
-  window.location.replace(section + '.html?v=20261024-14');
+function redirectMovedSection() {
+  const section = window.location.hash.slice(1);
+  if ((window.location.pathname.endsWith('/') || window.location.pathname.endsWith('/index.html')) && sectionPages.includes(section)) {
+    window.location.replace(section + '.html?v=20261024-15');
+  } else if (window.location.pathname.endsWith('/experience.html') && section === 'education') {
+    window.location.replace('index.html?v=20261024-15#education');
+  }
 }
+redirectMovedSection();
+window.addEventListener('hashchange', redirectMovedSection);
