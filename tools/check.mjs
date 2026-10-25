@@ -11,7 +11,8 @@ for(const file of pages){
  for(const match of source.matchAll(/(?:href|src)="([^"]+)"/g)){
   const url=match[1].replaceAll('&amp;','&');
   if(/^(https?:|mailto:|data:)/i.test(url))continue;
-  const [part,anchor]=url.split('#');
+  const [partWithQuery,anchor]=url.split('#');
+  const part=partWithQuery.split('?')[0];
   const target=part?path.resolve(root,path.dirname(file),decodeURIComponent(part)):path.join(root,file);
   if(!fs.existsSync(target)){problems.push(file+': missing '+url);continue;}
   if(anchor&&target.endsWith('.html')){
