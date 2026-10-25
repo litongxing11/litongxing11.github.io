@@ -7,6 +7,26 @@
 @media(max-width:760px){.header nav{display:grid;grid-template-columns:repeat(3,max-content);column-gap:25px;row-gap:9px;font-size:12px}}
 
 /* Portrait and athletics photo journal. */
+.header nav{flex-wrap:wrap;row-gap:10px}
+.subpage-main{padding-bottom:35px}
+.page-breadcrumb{padding-top:35px}
+.page-breadcrumb .text-link{font-size:12px}
+.subpage-main>.section{border-top:0;padding-top:42px}
+.subpage-main h1{font-size:clamp(40px,5.5vw,66px);line-height:1.12}
+.subpage-main .section-head{max-width:850px;margin-bottom:42px}
+.subpage-main .publication-layout{grid-template-columns:1fr;gap:25px;max-width:850px}
+.subpage-main .publication-layout article{max-width:760px}
+.related-page{margin-top:45px;padding:32px;background:var(--light)}
+.related-page p:not(.eyebrow){color:var(--muted)}
+.page-directory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.directory-card{position:relative;display:block;padding:28px 28px 52px;border:1px solid var(--line);text-decoration:none;min-width:0}
+.directory-card:hover{background:var(--light);border-color:var(--muted)}
+.directory-card .eyebrow{display:block;margin-bottom:18px}
+.directory-card h3{font-family:Georgia,serif;font-size:27px;font-weight:400}
+.directory-card p{color:var(--muted);font-size:14px;margin-bottom:0}
+.directory-arrow{position:absolute;bottom:20px;right:25px;font-size:23px;color:var(--accent)}
+@media(max-width:1000px){.page-directory{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.page-directory{grid-template-columns:1fr;gap:16px}.page-breadcrumb{padding-top:25px}.subpage-main>.section{padding-top:30px}.subpage-main .hero{padding-top:30px}.related-page{padding:24px}.subpage-main{padding-bottom:10px}}
 .hero-art.profile-portrait img{aspect-ratio:1;object-fit:cover;max-height:none;border-radius:120px 120px 3px 3px}
 .header nav a[aria-current="page"]{color:var(--accent);text-decoration:underline;text-underline-offset:6px}
 .athletics-main{padding-block:55px 65px}
