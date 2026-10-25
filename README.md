@@ -11,7 +11,7 @@
 ## 主要文件
 
 - `index.html`：个人简介、头像及各个独立页面的入口。
-- `about.html`、`research.html`、`experience.html`、`community.html`、`honors.html`、`contact.html`：关于本人、研究、经历、社区活动、荣誉及联系页面。
+- `research.html`、`experience.html`、`community.html`、`honors.html`、`contact.html`：研究、经历、社区活动、荣誉及联系页面。
 - `publication.html`、`beyond.html`、`athletics.html`：论文、课外兴趣及羽毛球照片页面。
 - `projects/*.html`：项目详情页。
 - `styles.css`：课堂模板基础样式与本人的页面调整。
