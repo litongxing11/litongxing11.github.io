@@ -89,3 +89,14 @@ main{animation:page-enter 600ms cubic-bezier(.22,1,.36,1) both}
 .athletics-navigation{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:30px;margin-top:20px}
 @media(max-width:760px){.hero .hero-art.profile-portrait{grid-row:1;max-width:260px}.hero-art.profile-portrait figcaption{text-align:center;font-size:12px}}
 @media(max-width:760px){.hero-art.profile-portrait{max-width:430px;width:100%;margin-inline:auto}.hero-art.profile-portrait img{border-radius:90px 90px 3px 3px}.athletics-main{padding-block:35px 42px}.athletics-intro{margin-bottom:35px}.athletics-intro h1 br{display:none}.athletics-gallery{grid-template-columns:1fr;gap:16px}.athletics-gallery figcaption{padding-block:20px}.athletics-lead{font-size:23px}}
+
+/* Contact links close every page with a simple academic profile row. */
+.footer{display:flex;flex-direction:column;align-items:center;gap:27px;padding-block:40px 25px;text-align:center}
+.footer-contacts{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:22px 38px}
+.footer-contacts a{display:inline-flex;align-items:center;gap:10px;padding-block:8px;color:var(--ink);font-size:14px;text-decoration:none;transition:color 180ms ease}
+.footer-contacts svg{width:26px;height:26px;flex-shrink:0}
+.footer-contacts a:hover{color:var(--accent)}
+.footer-contacts a:focus-visible{outline:2px solid var(--accent);outline-offset:6px;border-radius:2px}
+.footer-copyright{font-size:11px;color:var(--muted)}
+@media(max-width:480px){.footer-contacts{column-gap:22px}.footer-contacts a{flex-direction:column;gap:8px;font-size:12px}.footer{padding-top:30px;gap:24px}}
+@media(prefers-reduced-motion:reduce){.footer-contacts a{transition:none}}
