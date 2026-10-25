@@ -1,0 +1,7 @@
+{
+  "name": "tony-xing-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Litong (Tony) Xing's static personal portfolio",
+  "scripts": { "check": "node tools/check.mjs" }
+}

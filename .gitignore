@@ -1,0 +1,9 @@
+tmp/
+node_modules/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.key
+# Unused source-material downloads; curated website assets are tracked separately.
+assets/documents/drive-download-*
