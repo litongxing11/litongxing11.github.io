@@ -1482,5 +1482,133 @@
   "Choose language": {
     "zh-Hans": "选择语言",
     "fr": "Choisir la langue"
+  },
+  "Menu": {
+    "zh-Hans": "菜单",
+    "fr": "Menu"
+  },
+  "DOCUMENT": {
+    "zh-Hans": "文档",
+    "fr": "DOCUMENT"
+  },
+  "Document preview": {
+    "zh-Hans": "文档预览",
+    "fr": "Aperçu du document"
+  },
+  "Close": {
+    "zh-Hans": "关闭",
+    "fr": "Fermer"
+  },
+  "Original document in English.": {
+    "zh-Hans": "原始文档为英文。",
+    "fr": "Document original en anglais."
+  },
+  "Open PDF in a new tab ↗": {
+    "zh-Hans": "在新标签页中打开 PDF ↗",
+    "fr": "Ouvrir le PDF dans un nouvel onglet ↗"
+  },
+  "Download PDF ↓": {
+    "zh-Hans": "下载 PDF ↓",
+    "fr": "Télécharger le PDF ↓"
+  },
+  "Résumé · Litong (Tony) Xing": {
+    "zh-Hans": "简历 · Litong (Tony) Xing",
+    "fr": "CV · Litong (Tony) Xing"
+  },
+  "Differential privacy research paper": {
+    "zh-Hans": "差分隐私研究论文",
+    "fr": "Article de recherche sur la confidentialité différentielle"
+  },
+  "CSIRE Mako research poster": {
+    "zh-Hans": "CSIRE Mako 研究海报",
+    "fr": "Affiche de recherche CSIRE sur Mako"
+  },
+  "Sporting events research paper": {
+    "zh-Hans": "体育赛事研究论文",
+    "fr": "Rapport de recherche sur les événements sportifs"
+  },
+  "E-sports Club · Bear Tank slides": {
+    "zh-Hans": "电子竞技社 · Bear Tank 幻灯片",
+    "fr": "Club d’e-sport · Diapositives Bear Tank"
+  },
+  "Copy email address": {
+    "zh-Hans": "复制邮箱地址",
+    "fr": "Copier l’adresse e-mail"
+  },
+  "Email copied.": {
+    "zh-Hans": "邮箱地址已复制。",
+    "fr": "Adresse e-mail copiée."
+  },
+  "Select the email address to copy it.": {
+    "zh-Hans": "请选中邮箱地址进行复制。",
+    "fr": "Sélectionnez l’adresse e-mail pour la copier."
+  },
+  "SELECTED WORK": {
+    "zh-Hans": "精选研究",
+    "fr": "TRAVAUX CHOISIS"
+  },
+  "A few questions,": {
+    "zh-Hans": "几个问题，",
+    "fr": "Quelques questions,"
+  },
+  "explored in depth.": {
+    "zh-Hans": "深入探索。",
+    "fr": "explorées en profondeur."
+  },
+  "01 / PRIVACY & DATA ANALYSIS": {
+    "zh-Hans": "01 / 隐私与数据分析",
+    "fr": "01 / CONFIDENTIALITÉ ET ANALYSE DE DONNÉES"
+  },
+  "Comparing local and central differential privacy for online advertising measurement.": {
+    "zh-Hans": "比较用于在线广告衡量的本地与中心化差分隐私。",
+    "fr": "Comparer la confidentialité différentielle locale et centrale pour mesurer la publicité en ligne."
+  },
+  "Published in NHSJS · 2026": {
+    "zh-Hans": "发表于 NHSJS · 2026 年",
+    "fr": "Publié dans NHSJS · 2026"
+  },
+  "02 / DISTRIBUTED SYSTEMS": {
+    "zh-Hans": "02 / 分布式系统",
+    "fr": "02 / SYSTÈMES DISTRIBUÉS"
+  },
+  "Studying how execution and replication interact in distributed transaction systems.": {
+    "zh-Hans": "研究分布式事务系统中执行与复制的相互作用。",
+    "fr": "Étudier les interactions entre exécution et réplication dans les systèmes de transactions distribuées."
+  },
+  "Stony Brook University · CSIRE · 2026": {
+    "zh-Hans": "石溪大学 · CSIRE · 2026 年",
+    "fr": "Stony Brook University · CSIRE · 2026"
+  },
+  "View all honors ↗": {
+    "zh-Hans": "查看全部荣誉 ↗",
+    "fr": "Voir toutes les distinctions ↗"
+  },
+  "USAMO": {
+    "zh-Hans": "USAMO",
+    "fr": "USAMO"
+  },
+  "USACO": {
+    "zh-Hans": "USACO",
+    "fr": "USACO"
+  },
+  "AMC 12A · Perfect score": {
+    "zh-Hans": "AMC 12A · 满分",
+    "fr": "AMC 12A · Note parfaite"
+  },
+  "Research, and the life around it.": {
+    "zh-Hans": "研究，以及研究之外的生活。",
+    "fr": "La recherche et la vie qui l’entoure."
+  },
+  "Publication": {
+    "zh-Hans": "发表论文",
+    "fr": "Publication"
+  },
+  "First-page preview · Original document in English.": {
+    "zh-Hans": "首页预览 · 原始文档为英文。",
+    "fr": "Aperçu de la première page · Document original en anglais."
+  },
+  "First page of this document": {
+    "zh-Hans": "本文档的第一页",
+    "fr": "Première page de ce document"
   }
 }

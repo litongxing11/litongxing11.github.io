@@ -10,7 +10,7 @@ import re
 from urllib.parse import urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = '20261025-1'
+VERSION = '20261025-2'
 ORIGIN = 'https://litongxing11.github.io/'
 LANGUAGES = {'en': ('', 'English'), 'zh-Hans': ('zh', '简体中文'), 'fr': ('fr', 'Français')}
 VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
@@ -62,6 +62,39 @@ def enhance_english(source, page):
         source, count = re.subn(r'(<nav aria-label="Main navigation">.*?</nav>)', lambda m: '<div class="header-controls">' + m[1] + selector + '</div>', source, count=1, flags=re.S)
         if count != 1:
             raise ValueError('Missing main navigation: ' + page)
+    source = source.replace('<nav aria-label="Main navigation">', '<nav id="main-navigation" aria-label="Main navigation">')
+    if 'data-menu-toggle' not in source:
+        menu = '<button class="menu-toggle" type="button" data-menu-toggle aria-controls="main-navigation" aria-expanded="false"><span class="menu-icon" aria-hidden="true"></span>Menu</button>'
+        source = source.replace('<div class="header-controls">', menu + '<div class="header-controls">', 1)
+    if 'language-preference.js' not in source:
+        src = relative('language-preference.js', page, 'en') + '?v=' + VERSION
+        source = source.replace('</head>', f'  <script src="{src}"></script>\n</head>', 1)
+    document_titles = {
+        'litong-xing-resume.pdf': ('Résumé · Litong (Tony) Xing', 'assets/previews/resume.jpg'),
+        'differential-privacy-paper.pdf': ('Differential privacy research paper', 'assets/previews/differential-privacy-paper.jpg'),
+        'csire-mako-poster.pdf': ('CSIRE Mako research poster', 'assets/photos/csire-mako-poster-preview.jpg'),
+        'himcm-2025-paper.pdf': ('Sporting events research paper', 'assets/previews/sporting-events-paper.jpg'),
+        'esports-bear-tank.pdf': ('E-sports Club · Bear Tank slides', 'assets/previews/esports-bear-tank.jpg'),
+    }
+    def document_link(match):
+        tag = re.sub(r'\s+data-(?:document-title|preview-image)="[^"]*"', '', match.group())
+        for filename, (title, image) in document_titles.items():
+            if filename in tag:
+                return tag[:-1] + ' data-document-title="' + html.escape(title, quote=True) + '" data-preview-image="' + relative(image, page, 'en') + '">'
+        return tag
+    source = re.sub(r'<a\b[^>]*href="[^"]+\.pdf(?:[?#][^"]*)?"[^>]*>', document_link, source)
+    source = re.sub(r'\s*<!-- site-tools:start -->.*?<!-- site-tools:end -->\s*', '', source, flags=re.S)
+    tools = '''\n<!-- site-tools:start -->
+<div class="reading-progress" aria-hidden="true"></div>
+<div class="copy-toast" role="status" aria-live="polite"></div>
+<dialog class="document-dialog" id="document-preview" aria-labelledby="document-title">
+  <div class="document-toolbar"><div><p class="eyebrow">DOCUMENT</p><h2 id="document-title">Document preview</h2></div><button class="dialog-close" type="button" data-preview-close autofocus>Close <span aria-hidden="true">×</span></button></div>
+  <p class="document-note">First-page preview · Original document in English.</p>
+  <div class="document-canvas" tabindex="0" role="region" aria-label="Document preview"><img class="document-cover" alt="First page of this document"></div>
+  <div class="document-actions"><a class="text-link" data-document-open href="" target="_blank" rel="noopener">Open PDF in a new tab ↗</a><a class="text-link" data-document-download href="" download>Download PDF ↓</a></div>
+</dialog>
+<!-- site-tools:end -->\n'''
+    source = re.sub(r'\s*(<script src="(?:\.\./)?script\.js[^\"]*"></script>)', lambda m: tools + m.group(1), source, count=1)
     source = re.sub(r'\s*<link\b[^>]*rel="(?:canonical|alternate)"[^>]*>\s*', '', source)
     metadata = '\n  <link rel="canonical" href="' + ORIGIN + page + '">'
     for code in LANGUAGES:
@@ -103,12 +136,12 @@ class Localizer(HTMLParser):
         else:
             if tag == 'html':
                 attrs['lang'] = self.language
-            for name in ('alt', 'aria-label', 'title'):
+            for name in ('alt', 'aria-label', 'title', 'data-document-title', 'data-copy-success', 'data-copy-error'):
                 if attrs.get(name):
                     attrs[name] = translated(attrs[name], self.language)
             if tag == 'meta' and (attrs.get('name') == 'description' or attrs.get('property') in {'og:title', 'og:description'}):
                 attrs['content'] = translated(attrs['content'], self.language)
-            for name in ('href', 'src'):
+            for name in ('href', 'src', 'data-preview-image'):
                 if attrs.get(name):
                     attrs[name] = self.rewrite_url(attrs[name])
             if tag == 'script' and attrs.get('src'):

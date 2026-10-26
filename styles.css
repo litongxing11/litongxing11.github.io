@@ -133,3 +133,99 @@ main{animation:page-enter 600ms cubic-bezier(.22,1,.36,1) both}
 :lang(zh-Hans) .eyebrow{letter-spacing:.1em}
 @media(max-width:900px){.header{align-items:flex-start}.header-controls nav{gap:9px 15px}}
 @media(max-width:760px){.header-controls{align-items:flex-start;gap:15px;width:100%}.header-controls nav{justify-content:flex-start}.language-switch{font-size:12px}.language-switch a{padding-block:5px}}
+
+/* An editorial homepage: selected work first, with quieter routes to the rest. */
+.button-link{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);font-size:14px;font-weight:600;text-decoration:none;transition:background-color 180ms ease}
+.button-link:hover{background:#2d5b4f}
+.hero-links{align-items:center}
+.editorial-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:36px}
+.editorial-heading h2{margin-bottom:0}
+.editorial-heading>.text-link{flex-shrink:0;margin-bottom:5px}
+.selected-projects{display:grid;grid-template-columns:1fr 1fr;gap:38px}
+.selected-project{min-width:0}
+.selected-project figure{margin:0}
+.selected-image{display:block;overflow:hidden}
+.selected-image img{width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform 350ms ease}
+.selected-image:hover img{transform:scale(1.025)}
+.selected-project figcaption{font-size:10px;color:var(--muted);margin-top:8px}
+.selected-project-body{padding-top:24px}
+.selected-project-body .eyebrow{margin-bottom:14px}
+.selected-project h3{font:400 clamp(26px,2.8vw,34px)/1.2 Georgia,"Songti SC",serif;letter-spacing:-.02em}
+.selected-project-body>p:not(.eyebrow){color:var(--muted);font-size:15px}
+.selected-project-body .selected-evidence{color:var(--accent)!important;font-size:12px!important;margin-block:20px}
+.selected-evidence a{text-underline-offset:4px}
+.selected-project .hero-links{gap:22px}
+.recognition{border-top:1px solid var(--line);padding-block:32px 45px}
+.recognition-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:28px}
+.recognition-heading .eyebrow{margin:0}
+.recognition-heading .text-link{font-size:12px}
+.recognition-list{display:grid;grid-template-columns:repeat(3,1fr);margin:0;gap:35px}
+.recognition-list>div+div{border-left:1px solid var(--line);padding-left:35px}
+.recognition-list dt{font:400 clamp(29px,3vw,40px)/1.2 Georgia,serif;letter-spacing:-.02em;margin-bottom:10px}
+.recognition-list abbr{text-decoration:none}
+.recognition-list dd{margin:0;font-size:13px;color:var(--muted)}
+.around-site .section-head{max-width:720px}
+.explore-links{display:grid;grid-template-columns:1fr 1fr;column-gap:55px}
+.explore-link{position:relative;padding:25px 32px 25px 0;border-top:1px solid var(--line);text-decoration:none}
+.explore-link h3{font:400 27px/1.3 Georgia,"Songti SC",serif;margin-bottom:9px}
+.explore-link p{font-size:14px;color:var(--muted);margin:0;max-width:420px}
+.explore-link>span{position:absolute;right:2px;top:28px;color:var(--accent);font-size:23px;transition:transform 180ms ease}
+.explore-link:hover>span{transform:translate(2px,-2px)}
+.contact-band{display:flex;align-items:center;justify-content:space-between;gap:40px;padding:38px 42px;margin-bottom:65px;background:var(--light)}
+.contact-band .eyebrow{margin-bottom:13px}
+.contact-band h2{font-size:38px;margin-bottom:15px}
+.contact-band p:not(.eyebrow){max-width:440px;font-size:14px;color:var(--muted);margin-bottom:0}
+.contact-band-actions{display:flex;flex-direction:column;align-items:flex-start;gap:17px}
+.contact-band-email{font:400 clamp(20px,2.1vw,28px)/1.4 Georgia,serif;color:var(--accent);text-decoration:none;overflow-wrap:anywhere}
+.copy-email{font-family:inherit;background:none;color:var(--ink);border:0;border-bottom:1px solid currentColor;cursor:pointer}
+.contact-links .copy-email{align-self:flex-start}
+
+/* The compact header stays available while reading long project pages. */
+html{scroll-padding-top:120px}
+.header{position:sticky;top:0;z-index:40;padding-block:19px;background:rgba(246,243,235,.96);backdrop-filter:blur(12px);transition:box-shadow 200ms ease}
+.header.is-scrolled{box-shadow:0 12px 24px -22px rgba(25,61,53,.5)}
+.menu-toggle{display:none}
+.reading-progress{position:fixed;top:0;left:0;width:100%;height:2px;z-index:60;background:var(--accent);transform:scaleX(0);transform-origin:left;pointer-events:none}
+.modal-open{overflow:hidden}
+.skip{z-index:70}
+.copy-toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,8px);max-width:calc(100% - 32px);width:max-content;padding:12px 20px;background:var(--ink);color:var(--paper);font-size:14px;z-index:80;opacity:0;pointer-events:none;transition:opacity 160ms ease,transform 160ms ease}
+.copy-toast.is-visible{opacity:1;transform:translate(-50%,0)}
+.document-dialog{width:min(1060px,calc(100% - 48px));max-height:calc(100svh - 40px);padding:25px 28px 22px;border:1px solid var(--line);color:var(--ink);background:var(--paper);box-shadow:0 25px 90px rgba(0,0,0,.2)}
+.document-dialog::backdrop{background:rgba(13,32,27,.6);backdrop-filter:blur(3px)}
+.document-toolbar{display:flex;align-items:flex-start;justify-content:space-between;gap:25px}
+.document-toolbar .eyebrow{margin-bottom:6px;font-size:9px}
+.document-toolbar h2{font-size:25px;line-height:1.25;margin:0}
+.dialog-close{display:inline-flex;align-items:center;gap:15px;flex-shrink:0;padding:8px 0 8px 12px;border:0;background:none;font:inherit;font-size:13px;color:var(--ink);cursor:pointer}
+.dialog-close span{font-size:24px;line-height:1}
+.document-note{font-size:12px;color:var(--muted);margin-block:14px}
+.document-canvas{display:block;width:100%;height:min(62svh,700px);min-height:180px;overflow:auto;overscroll-behavior:contain;background:#e7e8e3;border:1px solid var(--line)}
+.document-cover{display:block;width:100%;max-width:900px;height:auto;margin-inline:auto;background:white}
+.document-actions{display:flex;flex-wrap:wrap;gap:18px 30px;margin-top:18px}
+.document-actions .text-link{font-size:12px}
+@media(max-width:760px){
+  html{scroll-padding-top:100px}
+  .header{flex-direction:row;align-items:center;flex-wrap:wrap;gap:0 18px;padding-block:17px}
+  .header .brand{margin-right:auto}
+  .js .menu-toggle{display:inline-flex;align-items:center;gap:10px;background:none;border:1px solid var(--line);padding:8px 11px;font:inherit;font-size:12px;color:var(--ink);cursor:pointer}
+  .menu-icon{position:relative;width:15px;height:10px;border-block:1px solid currentColor}
+  .js .header-controls{display:none}
+  .js .header.menu-open .header-controls{display:flex}
+  .header-controls{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+  .header-controls nav{gap:14px 20px}
+  .header-controls nav a{font-size:14px;padding-block:3px}
+  .editorial-heading{align-items:flex-start;flex-direction:column;gap:18px;margin-bottom:28px}
+  .selected-projects{grid-template-columns:1fr;gap:42px}
+  .recognition{padding-block:25px 35px}
+  .recognition-list{gap:20px}
+  .recognition-list>div+div{padding-left:20px}
+  .recognition-list dt{font-size:27px}
+  .recognition-list dd{font-size:12px}
+  .explore-links{column-gap:25px}
+  .explore-link h3{font-size:24px}
+  .contact-band{flex-direction:column;align-items:flex-start;gap:26px;padding:28px;margin-bottom:42px}
+  .document-dialog{width:calc(100% - 20px);padding:18px;max-height:calc(100svh - 20px)}
+  .document-toolbar h2{font-size:21px}
+  .document-canvas{height:60svh}
+}
+@media(max-width:480px){.recognition-list{grid-template-columns:1fr;gap:19px}.recognition-list>div{display:flex;align-items:center;justify-content:space-between;gap:20px}.recognition-list>div+div{border-left:0;border-top:1px solid var(--line);padding:19px 0 0}.recognition-list dt{margin:0;font-size:29px}.recognition-list dd{text-align:right}.explore-links{grid-template-columns:1fr}.contact-band{padding:25px}.document-actions{gap:14px}.document-toolbar{gap:12px}}
+@media(prefers-reduced-motion:reduce){.button-link,.selected-image img,.explore-link>span,.header,.copy-toast{transition:none}.selected-image:hover img,.explore-link:hover>span{transform:none}}

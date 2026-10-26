@@ -10,12 +10,14 @@
 
 ## 主要文件
 
-- `index.html`：个人简介、头像及各个独立页面的入口。
+- `index.html`：个人简介、头像、精选研究、荣誉摘要及各个独立页面的入口。
 - `research.html`、`experience.html`、`community.html`、`honors.html`、`contact.html`：研究、经历、社区活动、荣誉及联系页面。
 - `publication.html`、`beyond.html`、`athletics.html`：论文、课外兴趣及羽毛球照片页面。
 - `projects/*.html`：项目详情页。
 - `styles.css`：课堂模板基础样式与本人的页面调整。
-- `script.js`：年份更新，并将原首页章节的旧链接转到对应独立页面。
+- `script.js`：页面过渡、移动端菜单、阅读进度、文档预览、复制邮箱及旧章节链接跳转。
+- `language-preference.js`：记住所选语言，并在打开英文入口时转到对应语言页面。
+- `assets/previews/`：公开 PDF 的首页预览图片；完整文档仍可单独打开或下载。
 
 ## 多语言维护
 
@@ -27,9 +29,14 @@
 python3 tools/build-localizations.py
 python3 tools/build-localizations.py --check
 node tools/check.mjs
+node tools/check-language-preference.mjs
 ```
 
 生成器遇到缺失译文会直接报错，避免发布夹杂英文的半成品页面。请勿直接编辑生成的 `zh/` 或 `fr/` 页面。原始论文、海报、简历 PDF 和研究图表保留原文；中文及法语的 PDF 链接注明英文来源。
+
+## 本地预览
+
+在项目目录运行 `python3 -m http.server 8000 --bind 127.0.0.1`，然后打开 `http://127.0.0.1:8000/`。本地修改不会自动推送到 GitHub。
 
 ## 发布
 

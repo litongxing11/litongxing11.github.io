@@ -31,7 +31,7 @@ for(const file of pages){
   if(targetLanguage!==language)problems.push(file+': internal navigation loses the selected language');
  }
  if(/\[(?:Your|FIELD|YEAR)|YOUR NAME|CLASSROOM STARTER|No video is attached/.test(source))problems.push(file+': template placeholder remains');
- for(const match of source.matchAll(/(?:href|src)="([^"]+)"/g)){
+ for(const match of source.matchAll(/(?:href|src|data-preview-image)="([^"]+)"/g)){
   const url=match[1].replaceAll('&amp;','&');
   if(/^(https?:|mailto:|data:)/i.test(url))continue;
   const [partWithQuery,anchor]=url.split('#');
@@ -45,5 +45,6 @@ for(const file of pages){
  }
 }
 new vm.Script(fs.readFileSync(path.join(root,'script.js'),'utf8'),{filename:'script.js'});
+new vm.Script(fs.readFileSync(path.join(root,'language-preference.js'),'utf8'),{filename:'language-preference.js'});
 if(problems.length){console.error(problems.join('\n'));process.exitCode=1;}
 else console.log(`Checked ${pages.length} pages: language routes, document languages, local links, images, anchors, template text, JavaScript syntax.`);
