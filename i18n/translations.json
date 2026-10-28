@@ -1610,5 +1610,17 @@
   "First page of this document": {
     "zh-Hans": "本文档的第一页",
     "fr": "Première page de ce document"
+  },
+  "View the chess match photo (opens in a new tab)": {
+    "zh-Hans": "查看国际象棋对弈照片（在新标签页打开）",
+    "fr": "Voir la photo de la partie d’échecs (dans un nouvel onglet)"
+  },
+  "Litong (Tony) Xing, in a light gray sweater on the right, making a move during a chess game at school": {
+    "zh-Hans": "邢力桐（Tony）在学校进行国际象棋对弈，位于右侧，身穿浅灰色毛衣，正在落子",
+    "fr": "Litong (Tony) Xing, à droite en pull gris clair, joue un coup lors d’une partie d’échecs à l’école"
+  },
+  "At the chessboard — I'm on the right, wearing the light gray sweater.": {
+    "zh-Hans": "棋盘前的一刻——右侧穿浅灰色毛衣的人是我。",
+    "fr": "Devant l’échiquier — je suis à droite, avec le pull gris clair."
   }
 }

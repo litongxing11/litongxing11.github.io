@@ -10,7 +10,7 @@ import re
 from urllib.parse import urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = '20261025-2'
+VERSION = '20261028-1'
 ORIGIN = 'https://litongxing11.github.io/'
 LANGUAGES = {'en': ('', 'English'), 'zh-Hans': ('zh', '简体中文'), 'fr': ('fr', 'Français')}
 VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
