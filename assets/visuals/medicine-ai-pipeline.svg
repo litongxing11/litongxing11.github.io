@@ -1,20 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
-<title id="title">Medicine AI prototype information flow</title>
-<desc id="desc">A conceptual pipeline connects medical record images to optical character recognition, TextCNN text processing, a structured record, and a PyQt5 interface for medication reminders, pill-image alerts, and daily reports for users and caregivers.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">MedicineAI iPhone app architecture</title>
+<desc id="desc">Apple Vision extracts text from photos on the iPhone. Users review and correct the text before saving. Medication schedules are configured manually, with reference photos inside the app and taken or skipped history. Optional AI explanations send reviewed text, a question, and purpose through Supabase to DeepSeek after consent.</desc>
 <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#60746b"/></marker></defs>
-<rect width="1200" height="650" fill="#f6f3eb"/>
+<rect width="1200" height="760" fill="#f6f3eb"/>
 <g font-family="Arial, sans-serif" fill="#193d35">
-<text x="60" y="60" font-size="17" letter-spacing="3" fill="#60746b">MEDICINE AI / CONCEPTUAL PROTOTYPE PIPELINE</text>
-<text x="60" y="110" font-size="34" font-weight="600">From medical text to everyday assistance.</text>
-<g fill="#fff" stroke="#d4dcd1" stroke-width="2"><rect x="60" y="180" width="225" height="190" rx="12"/><rect x="345" y="180" width="225" height="190" rx="12"/><rect x="630" y="180" width="225" height="190" rx="12"/><rect x="915" y="180" width="225" height="190" rx="12"/></g>
-<g stroke="#60746b" stroke-width="2.5" marker-end="url(#arrow)"><path d="M290 275H335"/><path d="M575 275H620"/><path d="M860 275H905"/></g>
-<g font-size="15" letter-spacing="2" fill="#784b64"><text x="85" y="215">01 / INPUT</text><text x="370" y="215">02 / OCR</text><text x="655" y="215">03 / TEXTCNN</text><text x="940" y="215">04 / RECORD</text></g>
-<g font-size="22" font-weight="600"><text x="85" y="265">Medical records</text><text x="370" y="265">Text extraction</text><text x="655" y="265">Text processing</text><text x="940" y="265">Structured data</text></g>
-<g font-size="18" fill="#60746b"><text x="85" y="305">Images / documents</text><text x="370" y="305">Image → characters</text><text x="655" y="305">Learn text features</text><text x="940" y="305">Organize information</text><text x="85" y="335">Source information</text><text x="370" y="335">Recognized text</text><text x="655" y="335">Classify text</text><text x="940" y="335">Support the interface</text></g>
-<path d="M1028 380V435H600V463" fill="none" stroke="#60746b" stroke-width="2.5" marker-end="url(#arrow)"/>
-<rect x="60" y="475" width="1080" height="115" rx="12" fill="#e3e9dd"/>
-<text x="85" y="510" font-size="15" letter-spacing="2" fill="#60746b">PYQT5 APPLICATION / USER + CAREGIVER</text>
-<g font-size="22" font-weight="600"><text x="85" y="555">Medication reminders</text><text x="455" y="555">Pill-image alerts</text><text x="815" y="555">Daily reports</text></g>
-<path d="M420 530V565M780 530V565" stroke="#bdc9b9"/>
-<text x="60" y="625" font-size="17" fill="#60746b">Conceptual schematic of the student prototype’s information flow.</text>
+<text x="60" y="58" font-size="16" letter-spacing="3" fill="#60746b">MEDICINEAI / CURRENT iPHONE PROTOTYPE</text>
+<text x="60" y="110" font-size="34" font-weight="600">On-device notes. Reminders. Optional AI.</text>
+<text x="60" y="153" font-size="15" letter-spacing="2" fill="#784b64">SWIFTUI / NOTE PHOTO-TEXT FLOW</text>
+<g fill="#fff" stroke="#d4dcd1" stroke-width="2"><rect x="60" y="180" width="225" height="165" rx="12"/><rect x="345" y="180" width="225" height="165" rx="12"/><rect x="630" y="180" width="225" height="165" rx="12"/><rect x="915" y="180" width="225" height="165" rx="12"/></g>
+<g stroke="#60746b" stroke-width="2.5" marker-end="url(#arrow)"><path d="M290 262H335"/><path d="M575 262H620"/><path d="M860 262H905"/></g>
+<g font-size="14" letter-spacing="2" fill="#784b64"><text x="80" y="215">01 / INPUT</text><text x="365" y="215">02 / ON DEVICE</text><text x="650" y="215">03 / REVIEW</text><text x="935" y="215">04 / SAVE</text></g>
+<g font-size="22" font-weight="600"><text x="80" y="257">Notes &amp; photos</text><text x="365" y="257">Apple Vision OCR</text><text x="650" y="257">Review &amp; correct</text><text x="935" y="257">Local notes</text></g>
+<g font-size="17" fill="#60746b"><text x="80" y="292">Camera / photo library</text><text x="365" y="292">Recognize photo text</text><text x="650" y="292">Compare with the photo</text><text x="935" y="292">Saved on the iPhone</text><text x="80" y="319">Add care documents</text><text x="365" y="319">Runs on the iPhone</text><text x="650" y="319">User confirms the text</text><text x="935" y="319">Search and edit</text></g>
+<path d="M1028 355V399" fill="none" stroke="#60746b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="815" y="382" font-size="15" fill="#60746b">Select note text</text>
+<rect x="60" y="415" width="500" height="245" rx="12" fill="#e3e9dd"/>
+<text x="85" y="455" font-size="15" letter-spacing="2" fill="#60746b">MEDICATION ROUTINE</text>
+<text x="85" y="500" font-size="24" font-weight="600">User-set schedules &amp; reminders</text>
+<g font-size="19"><text x="85" y="544">Daily local notifications</text><text x="85" y="583">Reference photos inside the app</text><text x="85" y="622">Taken / skipped intake history</text></g>
+<rect x="620" y="415" width="520" height="245" rx="12" fill="#fff" stroke="#d4dcd1" stroke-width="2"/>
+<text x="645" y="455" font-size="15" letter-spacing="2" fill="#784b64">OPTIONAL AI EXPLANATIONS</text>
+<text x="645" y="500" font-size="24" font-weight="600">Review text &amp; give consent</text>
+<text x="645" y="544" font-size="22">Supabase → DeepSeek</text>
+<g font-size="18" fill="#60746b"><text x="645" y="583">Reviewed text, question &amp; purpose</text><text x="645" y="622">Explain selected notes or terms</text></g>
+<text x="60" y="710" font-size="17" fill="#60746b">Notes and medication reminders work without sign-in. AI explanations are optional.</text>
 </g></svg>

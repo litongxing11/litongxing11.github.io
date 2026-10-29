@@ -1,6 +1,6 @@
 # Litong (Tony) Xing — personal website
 
-个人网站提供英语、简体中文和法语三个完整版本。打开 `index.html` 即可查看，无需安装依赖或运行构建服务。`projects/` 是六个研究项目的详情页，`assets/documents/litong-xing-resume.pdf` 是去掉电话和街道地址、重新排版的公开版简历。
+个人网站提供英语、简体中文和法语三个完整版本。打开 `index.html` 即可查看，无需安装依赖或运行构建服务。`projects/` 是六个研究项目的详情页，`assets/documents/litong-xing-resume.pdf` 是用户指定的原始简历 PDF，保留其版式与内容。
 
 ## 内容与素材
 
@@ -44,4 +44,4 @@ node tools/check-language-preference.mjs
 
 网站文件位于仓库根目录，无需构建。在 GitHub 仓库的 Settings → Pages 中，选择 Deploy from a branch、`main` 和 `/(root)`，保存后由 GitHub Pages 发布。默认网址为 `https://litongxing11.github.io/`。
 
-推送源码和 Pages 发布是两个步骤；实际部署状态以 GitHub 页面为准。请勿上传原始简历中的完整电话和街道地址。
+推送源码和 Pages 发布是两个步骤；实际部署状态以 GitHub 页面为准。简历文件已按用户 2026 年 10 月 28 日的明确要求替换为其提供的原始 PDF；未经请求不重新生成或删改内容。

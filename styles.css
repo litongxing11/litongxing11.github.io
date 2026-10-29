@@ -233,3 +233,37 @@ html{scroll-padding-top:120px}
 }
 @media(max-width:480px){.recognition-list{grid-template-columns:1fr;gap:19px}.recognition-list>div{display:flex;align-items:center;justify-content:space-between;gap:20px}.recognition-list>div+div{border-left:0;border-top:1px solid var(--line);padding:19px 0 0}.recognition-list dt{margin:0;font-size:29px}.recognition-list dd{text-align:right}.explore-links{grid-template-columns:1fr}.contact-band{padding:25px}.document-actions{gap:14px}.document-toolbar{gap:12px}}
 @media(prefers-reduced-motion:reduce){.button-link,.selected-image img,.explore-link>span,.header,.copy-toast{transition:none}.selected-image:hover img,.explore-link:hover>span{transform:none}}
+
+/* MedicineAI presents the working app and its two user-controlled workflows. */
+.project-meta.medicine-meta{grid-template-columns:repeat(2,minmax(0,1fr))}
+.medicine-contents{display:flex;flex-wrap:wrap;gap:12px 23px;margin:0 0 30px;font-size:13px}
+.medicine-contents a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:5px}
+.medicine-showcase{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,300px);align-items:center;gap:25px 45px;margin:35px 0 50px;padding:38px;background:var(--light)}
+.medicine-showcase-copy .medicine-icon{width:76px;height:76px;border-radius:17px;margin-bottom:24px}
+.medicine-showcase-copy h2{font-size:36px}
+.medicine-showcase-copy p{margin:0;font-size:16px;line-height:1.8}
+.medicine-shot{display:block;width:100%;max-width:300px;margin-inline:auto}
+.medicine-shot img{width:100%;height:auto;border:1px solid var(--line);border-radius:24px;box-shadow:0 12px 28px rgba(25,61,53,.09)}
+.medicine-showcase figcaption{grid-column:1/-1;font-size:12px;color:var(--muted);line-height:1.7}
+.medicine-workflows{margin:25px 0 0}
+.medicine-workflow-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+.medicine-workflow{padding:25px;background:#fff;border:1px solid var(--line);min-width:0}
+.medicine-workflow h3{font-size:21px;line-height:1.4;margin-bottom:24px}
+.medicine-steps{list-style:none;margin:0;padding:0;counter-reset:medicine-step}
+.project-main .medicine-steps li{position:relative;margin:0;padding:0 0 25px 37px;counter-increment:medicine-step}
+.medicine-steps li::before{content:counter(medicine-step,decimal-leading-zero);position:absolute;left:0;top:1px;font-size:12px;color:var(--accent);background:#fff;z-index:1}
+.medicine-steps li:not(:last-child)::after{content:"";position:absolute;left:8px;top:24px;bottom:5px;width:1px;background:var(--line)}
+.medicine-steps li:last-child{padding-bottom:0}
+.medicine-steps strong{display:block;font-size:15px;font-weight:600;color:var(--ink);line-height:1.5;margin-bottom:5px}
+.medicine-steps span{display:block;font-size:13px;line-height:1.7;color:var(--muted)}
+.medicine-workflows figcaption{margin-top:18px;font-size:12px;color:var(--muted)}
+.medicine-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:35px;margin-top:25px}
+.medicine-feature-grid article{border-top:1px solid var(--line);padding:23px 0}
+.medicine-feature-grid h3{font-size:20px;line-height:1.4;margin-bottom:12px}
+.medicine-feature-grid p{font-size:15px;line-height:1.8;margin:0}
+.medicine-scope{border-left:3px solid var(--accent);padding:3px 0 3px 24px}
+.medicine-scope h2{font-size:24px;margin-bottom:12px}
+.medicine-scope p{font-size:14px;margin:0}
+.medicine-list-visual .feature-art{display:grid;place-items:center;aspect-ratio:3/2;background:var(--light);padding:45px}
+.medicine-list-visual .feature-art img{width:210px;height:auto;aspect-ratio:1;object-fit:contain;border-radius:38px}
+@media(max-width:760px){.project-meta.medicine-meta{grid-template-columns:1fr}.medicine-showcase{grid-template-columns:1fr;padding:25px;gap:27px;margin-block:28px}.medicine-showcase-copy h2{font-size:31px}.medicine-shot{max-width:275px}.medicine-workflow-columns,.medicine-feature-grid{grid-template-columns:1fr;gap:20px}.medicine-workflow{padding:23px}.medicine-feature-grid{gap:0}.medicine-list-visual .feature-art{padding:30px}.medicine-list-visual .feature-art img{width:180px}}

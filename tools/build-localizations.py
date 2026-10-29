@@ -10,7 +10,7 @@ import re
 from urllib.parse import urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parent.parent
-VERSION = '20261028-1'
+VERSION = '20261028-2'
 ORIGIN = 'https://litongxing11.github.io/'
 LANGUAGES = {'en': ('', 'English'), 'zh-Hans': ('zh', '简体中文'), 'fr': ('fr', 'Français')}
 VOID = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
@@ -80,7 +80,7 @@ def enhance_english(source, page):
         tag = re.sub(r'\s+data-(?:document-title|preview-image)="[^"]*"', '', match.group())
         for filename, (title, image) in document_titles.items():
             if filename in tag:
-                return tag[:-1] + ' data-document-title="' + html.escape(title, quote=True) + '" data-preview-image="' + relative(image, page, 'en') + '">'
+                return tag[:-1] + ' data-document-title="' + html.escape(title, quote=True) + '" data-preview-image="' + relative(image, page, 'en') + '?v=' + VERSION + '">'
         return tag
     source = re.sub(r'<a\b[^>]*href="[^"]+\.pdf(?:[?#][^"]*)?"[^>]*>', document_link, source)
     source = re.sub(r'\s*<!-- site-tools:start -->.*?<!-- site-tools:end -->\s*', '', source, flags=re.S)

@@ -12,9 +12,9 @@ function redirectMovedSection() {
   const section = window.location.hash.slice(1);
   const homePage = window.location.pathname.endsWith('/') || window.location.pathname.endsWith('/index.html');
   if (homePage && sectionPages.includes(section)) {
-    window.location.replace(section + '.html?v=20261028-1');
+    window.location.replace(section + '.html?v=20261028-2');
   } else if (section === 'education' && (homePage || window.location.pathname.endsWith('/experience.html'))) {
-    window.location.replace('index.html?v=20261028-1#about');
+    window.location.replace('index.html?v=20261028-2#about');
   }
 }
 redirectMovedSection();

@@ -319,10 +319,6 @@
     "zh-Hans": "Google 学术",
     "fr": "Google Scholar"
   },
-  "LinkedIn": {
-    "zh-Hans": "LinkedIn",
-    "fr": "LinkedIn"
-  },
   "Litong (Tony) Xing": {
     "zh-Hans": "Litong (Tony) Xing",
     "fr": "Litong (Tony) Xing"
@@ -378,10 +374,6 @@
   "View résumé ↗": {
     "zh-Hans": "查看简历（英文）↗",
     "fr": "Voir mon CV (anglais) ↗"
-  },
-  "LinkedIn ↗": {
-    "zh-Hans": "LinkedIn ↗",
-    "fr": "LinkedIn ↗"
   },
   "Based in New York · Learning across mathematics and computer science": {
     "zh-Hans": "现居纽约 · 在数学与计算机科学之间探索学习",
@@ -495,10 +487,6 @@
     "zh-Hans": "欢迎联系。",
     "fr": "Échangeons."
   },
-  "Email, Google Scholar, LinkedIn, and my résumé.": {
-    "zh-Hans": "邮箱、Google 学术、LinkedIn 与我的简历。",
-    "fr": "E-mail, Google Scholar, LinkedIn et mon CV."
-  },
   "Read about Tony Xing’s published study comparing local and central differential privacy.": {
     "zh-Hans": "了解 Tony Xing 已发表的本地与中心化差分隐私比较研究。",
     "fr": "Découvrez l’étude publiée de Tony Xing comparant la confidentialité différentielle locale et centrale."
@@ -538,10 +526,6 @@
   "Read paper (PDF) ↗": {
     "zh-Hans": "阅读论文（英文 PDF）↗",
     "fr": "Lire l’article (PDF en anglais) ↗"
-  },
-  "Connect with Tony Xing by email, Google Scholar, or LinkedIn, or view his résumé.": {
-    "zh-Hans": "通过邮箱、Google 学术或 LinkedIn 联系 Tony Xing，或查看他的简历。",
-    "fr": "Contactez Tony Xing par e-mail, Google Scholar ou LinkedIn, ou consultez son CV."
   },
   "Contact — Tony Xing": {
     "zh-Hans": "联系 — Tony Xing",
@@ -1622,5 +1606,405 @@
   "At the chessboard — I'm on the right, wearing the light gray sweater.": {
     "zh-Hans": "棋盘前的一刻——右侧穿浅灰色毛衣的人是我。",
     "fr": "Devant l’échiquier — je suis à droite, avec le pull gris clair."
+  },
+  "Pioneer Academics · Mathematics": {
+    "zh-Hans": "Pioneer Academics · 数学",
+    "fr": "Pioneer Academics · Mathématiques"
+  },
+  "Student developer · Conrad Challenge": {
+    "zh-Hans": "学生开发者 · 康莱德创新挑战赛",
+    "fr": "Développeur étudiant · Conrad Challenge"
+  },
+  "Developed Medicine AI, a medication-assistance app prototype for older adults and people with chronic diseases. Integrated OCR and TextCNN to process medical records and built a PyQt5 interface for medication reminders, pill-image alerts, and daily health reports.": {
+    "zh-Hans": "开发了 Medicine AI，一款面向老年人和慢性病患者的用药辅助应用原型。结合 OCR 与 TextCNN 处理医疗记录，并使用 PyQt5 构建界面，提供用药提醒、药片图像提示和每日健康报告。",
+    "fr": "J’ai développé Medicine AI, un prototype d’application d’aide à la prise de médicaments destiné aux personnes âgées et aux personnes atteintes de maladies chroniques. J’ai intégré l’OCR et TextCNN pour traiter les dossiers médicaux et créé une interface PyQt5 proposant des rappels de prise, des alertes avec images de comprimés et des rapports de santé quotidiens."
+  },
+  "MedicineAI": {
+    "zh-Hans": "MedicineAI",
+    "fr": "MedicineAI"
+  },
+  "iOS app developer": {
+    "zh-Hans": "iOS 应用开发者",
+    "fr": "Développeur d’applications iOS"
+  },
+  "In development": {
+    "zh-Hans": "开发中",
+    "fr": "En développement"
+  },
+  "Developed MedicineAI, an iPhone app prototype for medication reminders and care notes. Built a SwiftUI interface with on-device OCR, user-reviewed label text, daily reminders, saved medication reference photos, intake history, and optional AI explanations of selected notes.": {
+    "zh-Hans": "开发了 MedicineAI，一款用于用药提醒和健康笔记的 iPhone 应用原型。使用 SwiftUI 构建界面，支持设备端 OCR、用户核对药品标签文字、每日提醒、保存药品参考照片、服药记录，以及对选定笔记的可选 AI 解释。",
+    "fr": "J’ai développé MedicineAI, un prototype d’application iPhone pour les rappels de prise de médicaments et les notes de suivi. Son interface SwiftUI propose l’OCR sur l’appareil, la vérification du texte des étiquettes par l’utilisateur, des rappels quotidiens, des photos de référence des médicaments, l’historique des prises et des explications IA facultatives sur des notes sélectionnées."
+  },
+  "06 · iOS APP DEVELOPMENT": {
+    "zh-Hans": "06 · iOS 应用开发",
+    "fr": "06 · DÉVELOPPEMENT D’APPLICATION iOS"
+  },
+  "A native iPhone app prototype for care notes, reviewed photo-text recognition, medication reminders, intake history, and optional AI explanations.": {
+    "zh-Hans": "一款原生 iPhone 应用原型，支持健康笔记、经用户核对的图片文字识别、用药提醒、服药记录和可选 AI 解释。",
+    "fr": "Un prototype d’application iPhone native avec notes de suivi, reconnaissance de texte sur photo vérifiée par l’utilisateur, rappels de prise, historique et explications IA facultatives."
+  },
+  "MedicineAI is a native iPhone app prototype built with SwiftUI, on-device OCR, medication reminders, intake history, and optional AI explanations.": {
+    "zh-Hans": "MedicineAI 是一款使用 SwiftUI 构建的原生 iPhone 应用原型，支持设备端 OCR、用药提醒、服药记录和可选 AI 解释。",
+    "fr": "MedicineAI est un prototype d’application iPhone native développé avec SwiftUI, avec OCR sur l’appareil, rappels de prise, historique et explications IA facultatives."
+  },
+  "MedicineAI: medication reminders and care notes — Tony Xing": {
+    "zh-Hans": "MedicineAI：用药提醒与健康笔记 — Tony Xing",
+    "fr": "MedicineAI : rappels de prise et notes de suivi — Tony Xing"
+  },
+  "iOS APP DEVELOPMENT": {
+    "zh-Hans": "iOS 应用开发",
+    "fr": "DÉVELOPPEMENT D’APPLICATION iOS"
+  },
+  "MedicineAI: medication reminders and care notes.": {
+    "zh-Hans": "MedicineAI：用药提醒与健康笔记。",
+    "fr": "MedicineAI : rappels de prise et notes de suivi."
+  },
+  "I developed MedicineAI, a native iPhone app prototype designed for older adults and people managing chronic conditions, bringing care notes, medication reminders, and intake history into one interface.": {
+    "zh-Hans": "我开发了 MedicineAI，一款面向老年人和慢性病管理人群的原生 iPhone 应用原型，将健康笔记、用药提醒和服药记录整合在一个界面中。",
+    "fr": "J’ai développé MedicineAI, un prototype d’application iPhone native conçu pour les personnes âgées et les personnes vivant avec une maladie chronique, réunissant notes de suivi, rappels de prise et historique dans une seule interface."
+  },
+  "Native iPhone app": {
+    "zh-Hans": "原生 iPhone 应用",
+    "fr": "Application iPhone native"
+  },
+  "Keep care notes, medication reference photos, reminders, and intake history together in a clear iPhone interface.": {
+    "zh-Hans": "在清晰的 iPhone 界面中集中管理健康笔记、药品参考照片、提醒和服药记录。",
+    "fr": "Réunir les notes de suivi, les photos de référence des médicaments, les rappels et l’historique des prises dans une interface iPhone claire."
+  },
+  "Current MedicineAI architecture: on-device Apple Vision OCR, user review, local notes, manually configured medication reminders, intake history, and optional consent-based DeepSeek explanations through Supabase.": {
+    "zh-Hans": "当前 MedicineAI 架构：设备端 Apple Vision OCR、用户核对、本地笔记、手动设置的用药提醒、服药记录，以及经用户同意后通过 Supabase 提供的可选 DeepSeek 解释。",
+    "fr": "Architecture actuelle de MedicineAI : OCR Apple Vision sur l’appareil, vérification par l’utilisateur, notes locales, rappels configurés manuellement, historique des prises et explications DeepSeek facultatives via Supabase après consentement."
+  },
+  "Architecture of the current iPhone prototype: Apple Vision recognizes text on the device, users review it before saving, and optional AI explanations use selected text after consent.": {
+    "zh-Hans": "当前 iPhone 原型的架构：Apple Vision 在设备上识别文字，用户核对后保存；可选 AI 解释仅在用户同意后使用选定文字。",
+    "fr": "Architecture du prototype iPhone actuel : Apple Vision reconnaît le texte sur l’appareil, l’utilisateur le vérifie avant de l’enregistrer, et les explications IA facultatives utilisent le texte sélectionné après consentement."
+  },
+  "Built a native SwiftUI interface for care notes, saved photos, and medication routines.": {
+    "zh-Hans": "使用 SwiftUI 构建原生界面，管理健康笔记、已保存照片和用药安排。",
+    "fr": "Création d’une interface SwiftUI native pour les notes de suivi, les photos enregistrées et les routines de prise."
+  },
+  "Used Apple Vision for on-device OCR, with editable text and a review step before saving.": {
+    "zh-Hans": "使用 Apple Vision 在设备端识别文字，支持编辑，并在保存前由用户核对。",
+    "fr": "Utilisation d’Apple Vision pour l’OCR sur l’appareil, avec texte modifiable et vérification avant l’enregistrement."
+  },
+  "Added user-set reminder schedules, saved medication reference photos inside the app, and taken/skipped history.": {
+    "zh-Hans": "支持用户设置提醒时间、在应用内保存药品参考照片，并记录已服用或已跳过的用药情况。",
+    "fr": "Ajout de rappels configurés par l’utilisateur, de photos de référence des médicaments dans l’application et d’un historique des prises effectuées ou ignorées."
+  },
+  "Connected optional DeepSeek explanations through Supabase, with review and consent before sharing selected note text.": {
+    "zh-Hans": "通过 Supabase 接入可选 DeepSeek 解释功能，在分享选定笔记文字前要求用户核对并同意。",
+    "fr": "Intégration d’explications DeepSeek facultatives via Supabase, avec vérification et consentement avant le partage du texte sélectionné."
+  },
+  "Current status": {
+    "zh-Hans": "当前进展",
+    "fr": "État actuel"
+  },
+  "The iPhone app is under active development. Notes, photo text recognition, medication reminders, and intake history are implemented; optional AI explanations work through the authenticated backend.": {
+    "zh-Hans": "这款 iPhone 应用正在持续开发中。笔记、图片文字识别、用药提醒和服药记录均已实现；可选 AI 解释通过需要身份验证的后端提供。",
+    "fr": "L’application iPhone est en cours de développement. Les notes, la reconnaissance de texte sur photo, les rappels et l’historique des prises sont implémentés ; les explications IA facultatives passent par un backend authentifié."
+  },
+  "Swift · SwiftUI · Apple Vision · UserNotifications · Supabase · DeepSeek": {
+    "zh-Hans": "Swift · SwiftUI · Apple Vision · UserNotifications · Supabase · DeepSeek",
+    "fr": "Swift · SwiftUI · Apple Vision · UserNotifications · Supabase · DeepSeek"
+  },
+  "WORKING iOS PROTOTYPE": {
+    "zh-Hans": "可运行的 iOS 原型",
+    "fr": "PROTOTYPE iOS FONCTIONNEL"
+  },
+  "MedicineAI: medication routines, care notes, and accessible AI explanations.": {
+    "zh-Hans": "MedicineAI：用药安排、健康笔记与便捷的 AI 解释。",
+    "fr": "MedicineAI : routines de prise, notes de suivi et explications IA accessibles."
+  },
+  "Originally developed for the Conrad Challenge, MedicineAI has evolved into a native iPhone app prototype designed for older adults and people managing chronic conditions. It brings medication reminders, saved notes, label photos, and optional AI explanations into one interface, with an Easy Mode that offers larger controls and voice features.": {
+    "zh-Hans": "MedicineAI 最初为康莱德创新挑战赛开发，如今已发展为面向老年人和慢性病管理人群的原生 iPhone 应用原型。它在一个界面中整合用药提醒、已保存的笔记、标签照片和可选 AI 解释，并提供具有更大控件和语音功能的简易模式。",
+    "fr": "Initialement développé pour le Conrad Challenge, MedicineAI est devenu un prototype d’application iPhone native conçu pour les personnes âgées et les personnes vivant avec une maladie chronique. Il réunit rappels de prise, notes enregistrées, photos d’étiquettes et explications IA facultatives, avec un mode simplifié proposant de plus grands boutons et des fonctions vocales."
+  },
+  "Started in Grade 10; continued development in 2026": {
+    "zh-Hans": "始于十年级；2026 年继续开发",
+    "fr": "Début en 10e année ; développement poursuivi en 2026"
+  },
+  "Conrad Challenge · Independent iOS development": {
+    "zh-Hans": "康莱德创新挑战赛 · 独立 iOS 开发",
+    "fr": "Conrad Challenge · Développement iOS indépendant"
+  },
+  "Working prototype in private testing": {
+    "zh-Hans": "可运行原型，正在内部测试",
+    "fr": "Prototype fonctionnel en test privé"
+  },
+  "Easy Mode, in practice.": {
+    "zh-Hans": "简易模式，直观呈现。",
+    "fr": "Le mode simplifié, en pratique."
+  },
+  "Large, clearly labelled controls keep medications, care notes, and AI questions easy to reach. Voice input and read-aloud answers offer another way to interact.": {
+    "zh-Hans": "大号、标识清晰的控件让用药、健康笔记和 AI 提问更易操作。语音输入和回答朗读提供了另一种交互方式。",
+    "fr": "De grands boutons clairement nommés donnent accès aux médicaments, aux notes et aux questions à l’IA. La saisie vocale et la lecture des réponses à voix haute offrent un autre mode d’interaction."
+  },
+  "MedicineAI app icon: an ivory folded M with a peach accent on forest green": {
+    "zh-Hans": "MedicineAI 应用图标：深绿色背景上的象牙白折叠 M，点缀桃色",
+    "fr": "Icône de MedicineAI : un M ivoire plié, avec une touche pêche sur fond vert forêt"
+  },
+  "MedicineAI Easy Mode home screen with large medication, AI, and notes controls.": {
+    "zh-Hans": "MedicineAI 简易模式主屏幕，带有大号用药、AI 和笔记控件。",
+    "fr": "Écran d’accueil du mode simplifié de MedicineAI, avec de grands boutons pour les médicaments, l’IA et les notes."
+  },
+  "Open the full-size MedicineAI Easy Mode screenshot": {
+    "zh-Hans": "打开完整尺寸的 MedicineAI 简易模式截图",
+    "fr": "Ouvrir la capture du mode simplifié de MedicineAI en grand format"
+  },
+  "MedicineAI's Easy Mode uses large, clearly labelled controls for medication routines, notes, and AI questions. Prototype interface shown with fictional test data.": {
+    "zh-Hans": "MedicineAI 简易模式使用大号、标识清晰的控件，支持用药安排、笔记和 AI 提问。图中为使用虚构测试数据的原型界面。",
+    "fr": "Le mode simplifié de MedicineAI utilise de grands boutons clairement nommés pour les routines de prise, les notes et les questions à l’IA. Interface du prototype présentée avec des données de test fictives."
+  },
+  "Bring medication routines and appointment notes into a clear, accessible interface. MedicineAI lets users photograph printed labels or notes, review the extracted text, set their own reminder schedules, and request explanations of selected note text. The design keeps users in control of what they save, record, and share.": {
+    "zh-Hans": "将用药安排与就诊笔记整合在清晰、易用的界面中。MedicineAI 让用户拍摄印刷标签或笔记，核对识别出的文字，自行设置提醒计划，并请求解释选定的笔记内容。用户始终掌控自己保存、记录和分享的信息。",
+    "fr": "Réunir les routines de prise et les notes de rendez-vous dans une interface claire et accessible. MedicineAI permet de photographier des étiquettes imprimées ou des notes, de vérifier le texte reconnu, de configurer ses rappels et de demander des explications sur un texte sélectionné. L’utilisateur garde le contrôle de ce qu’il enregistre, consigne et partage."
+  },
+  "Two workflows, one app.": {
+    "zh-Hans": "两条流程，一个应用。",
+    "fr": "Deux parcours, une application."
+  },
+  "Notes & medication routines": {
+    "zh-Hans": "笔记与用药安排",
+    "fr": "Notes et routines de prise"
+  },
+  "Optional AI explanations": {
+    "zh-Hans": "可选 AI 解释",
+    "fr": "Explications IA facultatives"
+  },
+  "Capture": {
+    "zh-Hans": "录入",
+    "fr": "Saisir"
+  },
+  "Photograph a label or note, or type the information.": {
+    "zh-Hans": "拍摄标签或笔记，也可手动输入信息。",
+    "fr": "Photographier une étiquette ou une note, ou saisir les informations."
+  },
+  "Recognize on device": {
+    "zh-Hans": "设备端识别",
+    "fr": "Reconnaître sur l’appareil"
+  },
+  "Apple Vision reads photo text on the iPhone.": {
+    "zh-Hans": "Apple Vision 在 iPhone 上识别图片文字。",
+    "fr": "Apple Vision lit le texte des photos sur l’iPhone."
+  },
+  "Review & correct": {
+    "zh-Hans": "核对与修正",
+    "fr": "Vérifier et corriger"
+  },
+  "Compare extracted text with the original image before saving.": {
+    "zh-Hans": "保存前，对照原图核对识别出的文字。",
+    "fr": "Comparer le texte reconnu avec l’image originale avant de l’enregistrer."
+  },
+  "Save locally": {
+    "zh-Hans": "本地保存",
+    "fr": "Enregistrer localement"
+  },
+  "Keep reviewed notes, labels, and reference photos on the phone.": {
+    "zh-Hans": "在手机上保存已核对的笔记、标签和参考照片。",
+    "fr": "Conserver les notes vérifiées, les étiquettes et les photos de référence sur le téléphone."
+  },
+  "Set reminder schedules": {
+    "zh-Hans": "设置提醒计划",
+    "fr": "Configurer les rappels"
+  },
+  "Choose reminder times and repeat days yourself.": {
+    "zh-Hans": "自行选择提醒时间和重复日期。",
+    "fr": "Choisir soi-même les heures et les jours de répétition."
+  },
+  "Open the reminder": {
+    "zh-Hans": "打开提醒",
+    "fr": "Ouvrir le rappel"
+  },
+  "A generic notification opens the saved medication and reference photo inside the app.": {
+    "zh-Hans": "通用通知打开应用内已保存的药品信息与参考照片。",
+    "fr": "Une notification générique ouvre le médicament et sa photo de référence dans l’application."
+  },
+  "Choose a saved note": {
+    "zh-Hans": "选择已保存的笔记",
+    "fr": "Choisir une note"
+  },
+  "Select the note you want help understanding.": {
+    "zh-Hans": "选择希望获得解释的笔记。",
+    "fr": "Sélectionner la note que l’on souhaite mieux comprendre."
+  },
+  "Type or speak a question": {
+    "zh-Hans": "输入或说出问题",
+    "fr": "Écrire ou dicter une question"
+  },
+  "Type a question, or speak and correct the transcript before applying it.": {
+    "zh-Hans": "输入问题，或在说出问题后核对转写文字，再明确应用。",
+    "fr": "Saisir une question, ou la dicter puis corriger la transcription avant de l’appliquer."
+  },
+  "Review the request": {
+    "zh-Hans": "核对请求",
+    "fr": "Vérifier la demande"
+  },
+  "Review the exact text and confirm sharing permission.": {
+    "zh-Hans": "核对将要分享的确切文字，并确认分享许可。",
+    "fr": "Vérifier le texte exact et confirmer l’autorisation de partage."
+  },
+  "Send through the backend": {
+    "zh-Hans": "通过后端发送",
+    "fr": "Envoyer via le backend"
+  },
+  "The authenticated backend handles the optional DeepSeek request.": {
+    "zh-Hans": "需要身份验证的后端处理可选 DeepSeek 请求。",
+    "fr": "Le backend authentifié traite la demande facultative à DeepSeek."
+  },
+  "Read the explanation": {
+    "zh-Hans": "阅读解释",
+    "fr": "Lire l’explication"
+  },
+  "Receive an AI explanation of the selected text.": {
+    "zh-Hans": "获得对选定文字的 AI 解释。",
+    "fr": "Recevoir une explication IA du texte sélectionné."
+  },
+  "Listen, if you choose": {
+    "zh-Hans": "按需收听",
+    "fr": "Écouter si souhaité"
+  },
+  "Read the answer aloud, with a user-controlled Stop action.": {
+    "zh-Hans": "按需朗读回答，并可自行停止。",
+    "fr": "Faire lire la réponse à voix haute et l’arrêter à tout moment."
+  },
+  "MedicineAI separates local note and reminder features from optional AI requests. Text recognition runs on the device, while AI requests require explicit review and permission before selected text is shared.": {
+    "zh-Hans": "MedicineAI 将本地笔记和提醒功能与可选 AI 请求分开。文字识别在设备上运行；AI 请求仅在用户明确核对并许可后分享选定文字。",
+    "fr": "MedicineAI sépare les notes et rappels locaux des demandes IA facultatives. La reconnaissance de texte s’effectue sur l’appareil ; une demande IA exige une vérification et une permission explicites avant le partage du texte sélectionné."
+  },
+  "Notes and label-text recognition": {
+    "zh-Hans": "笔记与标签文字识别",
+    "fr": "Notes et reconnaissance des étiquettes"
+  },
+  "Photograph visit notes or printed medication labels, extract text with Apple Vision, and correct it against the original image before saving.": {
+    "zh-Hans": "拍摄就诊笔记或印刷药品标签，使用 Apple Vision 提取文字，并在保存前对照原图修正。",
+    "fr": "Photographier des notes de consultation ou des étiquettes imprimées, extraire le texte avec Apple Vision et le corriger en le comparant à l’image originale avant de l’enregistrer."
+  },
+  "Flexible medication routines": {
+    "zh-Hans": "灵活的用药安排",
+    "fr": "Routines de prise flexibles"
+  },
+  "Enter medication names, instructions, and times. Repeat schedules can cover every day, weekdays, weekends, or custom weekdays, and can be paused, resumed, or archived.": {
+    "zh-Hans": "输入药品名称、说明和时间。重复计划可设为每天、工作日、周末或自选星期，并支持暂停、恢复或归档。",
+    "fr": "Saisir les noms des médicaments, les instructions et les heures. Les rappels peuvent se répéter tous les jours, en semaine, le week-end ou selon des jours choisis, et être mis en pause, repris ou archivés."
+  },
+  "Reference photos and intake history": {
+    "zh-Hans": "参考照片与服药记录",
+    "fr": "Photos de référence et historique des prises"
+  },
+  "Notifications use generic wording. Opening a reminder shows the saved medication and label photo inside the app. Taken, Skipped, and Undo controls record the user's own actions.": {
+    "zh-Hans": "通知使用通用措辞。打开提醒后，可在应用内查看已保存的药品信息和标签照片。“已服用”“已跳过”和“撤销”控件用于记录用户自己的操作。",
+    "fr": "Les notifications utilisent un texte générique. Ouvrir un rappel affiche le médicament enregistré et la photo de son étiquette dans l’application. Les commandes Pris, Ignoré et Annuler consignent les actions de l’utilisateur."
+  },
+  "Reviewed AI explanations": {
+    "zh-Hans": "经核对的 AI 解释",
+    "fr": "Explications IA après vérification"
+  },
+  "Select note text, prepare a question, and review exactly what will be shared. Optional DeepSeek explanations use an authenticated backend that keeps provider credentials out of the app.": {
+    "zh-Hans": "选取笔记文字、准备问题，并核对将要分享的确切内容。可选 DeepSeek 解释通过需要身份验证的后端提供，服务商凭据不会置于应用内。",
+    "fr": "Sélectionner le texte d’une note, préparer une question et vérifier exactement ce qui sera partagé. Les explications DeepSeek facultatives passent par un backend authentifié qui conserve les identifiants du fournisseur hors de l’application."
+  },
+  "Easy Mode and voice interaction": {
+    "zh-Hans": "简易模式与语音交互",
+    "fr": "Mode simplifié et interaction vocale"
+  },
+  "A simplified interface offers larger controls and clearer steps. On supported devices, users can speak a question, correct the transcript, and explicitly apply it. Answers have user-controlled read-aloud and Stop actions.": {
+    "zh-Hans": "简化界面提供更大的控件和更清晰的步骤。在受支持的设备上，用户可说出问题、修正转写文字并明确应用。回答支持用户自主控制的朗读与停止。",
+    "fr": "Une interface simplifiée propose de plus grands boutons et des étapes plus claires. Sur les appareils compatibles, l’utilisateur peut dicter une question, corriger sa transcription et l’appliquer explicitement. La lecture des réponses et son arrêt restent sous son contrôle."
+  },
+  "Four languages and local storage": {
+    "zh-Hans": "四种语言与本地存储",
+    "fr": "Quatre langues et stockage local"
+  },
+  "The interface supports English, Spanish, Simplified Chinese, and French. Saved notes, photos, schedules, and intake history use protected local storage; signing in does not automatically upload them.": {
+    "zh-Hans": "界面支持英语、西班牙语、简体中文和法语。笔记、照片、计划和服药记录保存在受保护的本地存储中；登录不会自动上传这些内容。",
+    "fr": "L’interface est disponible en anglais, espagnol, chinois simplifié et français. Les notes, photos, plannings et historiques utilisent un stockage local protégé ; la connexion à un compte ne les téléverse pas automatiquement."
+  },
+  "Project history": {
+    "zh-Hans": "项目历程",
+    "fr": "Historique du projet"
+  },
+  "I began MedicineAI as a Grade 10 Conrad Challenge project and was a finalist in the China Conrad Challenge. I have continued developing it into a native iPhone prototype, expanding the work from its original concept into medication scheduling, reviewed text recognition, accessible interaction, and a controlled AI backend.": {
+    "zh-Hans": "我在十年级时以康莱德创新挑战赛项目开始开发 MedicineAI，并入围中国站决赛。此后，我持续将其开发为原生 iPhone 原型，从最初构想拓展到用药计划、经核对的文字识别、易用的交互和受控 AI 后端。",
+    "fr": "J’ai commencé MedicineAI en 10e année pour le Conrad Challenge et ai été finaliste de l’édition chinoise. J’ai poursuivi son développement sous forme de prototype iPhone natif, en étendant le concept initial aux plannings de prise, à la reconnaissance de texte vérifiée, à une interaction accessible et à un backend IA contrôlé."
+  },
+  "The current version is installed on an iPhone for private testing. Development has focused on the complete workflow: entering information, checking extracted text, opening reminders, preserving drafts, and handling permissions and interruptions.": {
+    "zh-Hans": "当前版本已安装在 iPhone 上进行内部测试。开发重点是完整流程：录入信息、核对识别文字、打开提醒、保留草稿，以及处理权限与中断。",
+    "fr": "La version actuelle est installée sur un iPhone pour des tests privés. Le développement porte sur le parcours complet : saisie des informations, vérification du texte reconnu, ouverture des rappels, préservation des brouillons et gestion des permissions et des interruptions."
+  },
+  "Testing & current status": {
+    "zh-Hans": "测试与当前进展",
+    "fr": "Tests et état actuel"
+  },
+  "As of October 28, 2026, MedicineAI is a working iOS prototype in private testing. The latest recorded iOS suite executed 285 tests, with two expected device-only skips and no failures; the backend suite passed 305 tests.": {
+    "zh-Hans": "截至 2026 年 10 月 28 日，MedicineAI 是正在内部测试的可运行 iOS 原型。最近记录的 iOS 测试套件执行了 285 项测试，其中两项仅限真机的测试按预期跳过，且无失败；后端套件通过了 305 项测试。",
+    "fr": "Au 28 octobre 2026, MedicineAI est un prototype iOS fonctionnel en test privé. La dernière suite iOS enregistrée a exécuté 285 tests, avec deux tests réservés aux appareils physiques ignorés comme prévu et aucun échec ; la suite backend a réussi 305 tests."
+  },
+  "Physical-iPhone checks have covered camera capture, reviewed text recognition, saved-photo reminders, spoken questions, and audio playback. Testing uses fictional data and focuses on software behavior, privacy boundaries, accessibility, and failure handling. The app has not been publicly released on the App Store.": {
+    "zh-Hans": "iPhone 真机检查覆盖了相机拍摄、经核对的文字识别、带已保存照片的提醒、语音提问和音频播放。测试使用虚构数据，重点检查软件行为、隐私边界、无障碍功能及故障处理。应用尚未在 App Store 公开发布。",
+    "fr": "Les vérifications sur iPhone physique ont couvert la prise de photos, la reconnaissance de texte vérifiée, les rappels avec photos enregistrées, les questions dictées et la lecture audio. Les tests utilisent des données fictives et portent sur le comportement logiciel, les limites de confidentialité, l’accessibilité et la gestion des erreurs. L’application n’est pas encore publiée sur l’App Store."
+  },
+  "Scope": {
+    "zh-Hans": "功能范围",
+    "fr": "Périmètre"
+  },
+  "MedicineAI supports organizing information and requesting explanations of selected text. It does not identify pills by appearance, choose medication doses or schedules, diagnose conditions, or replace advice from a clinician or pharmacist.": {
+    "zh-Hans": "MedicineAI 用于整理信息及请求解释选定文字。它不会根据外观识别药片、决定用药剂量或计划、诊断疾病，也不能代替医生或药师的建议。",
+    "fr": "MedicineAI aide à organiser des informations et à demander des explications sur un texte sélectionné. Il n’identifie pas les comprimés par leur apparence, ne choisit ni doses ni plannings, ne pose pas de diagnostic et ne remplace pas les conseils d’un professionnel de santé ou d’un pharmacien."
+  },
+  "Swift · SwiftUI · Apple Vision OCR · Apple Speech · AVFoundation · UserNotifications · Supabase · PostgreSQL · DeepSeek API": {
+    "zh-Hans": "Swift · SwiftUI · Apple Vision OCR · Apple Speech · AVFoundation · UserNotifications · Supabase · PostgreSQL · DeepSeek API",
+    "fr": "Swift · SwiftUI · Apple Vision OCR · Apple Speech · AVFoundation · UserNotifications · Supabase · PostgreSQL · DeepSeek API"
+  },
+  "Developed MedicineAI, an iPhone app prototype combining medication schedules, care notes, on-device text recognition, reference photos, and user-reviewed AI explanations. Added four-language support and an Easy Mode with larger controls, spoken questions, and read-aloud answers.": {
+    "zh-Hans": "开发了 MedicineAI，一款整合用药计划、健康笔记、设备端文字识别、参考照片和经用户核对的 AI 解释的 iPhone 应用原型。加入四种语言支持，以及具有更大控件、语音提问和回答朗读功能的简易模式。",
+    "fr": "J’ai développé MedicineAI, un prototype d’application iPhone réunissant plannings de prise, notes de suivi, reconnaissance de texte sur l’appareil, photos de référence et explications IA vérifiées par l’utilisateur. J’y ai ajouté quatre langues et un mode simplifié avec de grands boutons, des questions dictées et la lecture des réponses à voix haute."
+  },
+  "iOS app developer · Conrad Challenge": {
+    "zh-Hans": "iOS 应用开发者 · 康莱德创新挑战赛",
+    "fr": "Développeur d’applications iOS · Conrad Challenge"
+  },
+  "Grade 10–present": {
+    "zh-Hans": "十年级至今",
+    "fr": "Depuis la 10e année"
+  },
+  "Started in Grade 10 · Continued development in 2026": {
+    "zh-Hans": "始于十年级 · 2026 年继续开发",
+    "fr": "Début en 10e année · Développement poursuivi en 2026"
+  },
+  "06 · WORKING iOS PROTOTYPE": {
+    "zh-Hans": "06 · 可运行的 iOS 原型",
+    "fr": "06 · PROTOTYPE iOS FONCTIONNEL"
+  },
+  "MedicineAI app icon.": {
+    "zh-Hans": "MedicineAI 应用图标。",
+    "fr": "Icône de l’application MedicineAI."
+  },
+  "MedicineAI is Tony Xing's iPhone app prototype for medication reminders, care notes, reviewed AI explanations, and accessible voice features.": {
+    "zh-Hans": "MedicineAI 是 Tony Xing 开发的 iPhone 应用原型，支持用药提醒、健康笔记、经核对的 AI 解释和易用的语音功能。",
+    "fr": "MedicineAI est le prototype d’application iPhone de Tony Xing pour les rappels de prise, les notes de suivi, les explications IA vérifiées et des fonctions vocales accessibles."
+  },
+  "MedicineAI: medication reminders and accessible AI explanations — Tony Xing": {
+    "zh-Hans": "MedicineAI：用药提醒与便捷的 AI 解释 — Tony Xing",
+    "fr": "MedicineAI : rappels de prise et explications IA accessibles — Tony Xing"
+  },
+  "On this page": {
+    "zh-Hans": "本页内容",
+    "fr": "Sur cette page"
+  },
+  "Workflow": {
+    "zh-Hans": "使用流程",
+    "fr": "Parcours"
+  },
+  "Originally a Conrad Challenge project, MedicineAI is now an iPhone app prototype combining medication schedules, care notes, on-device text recognition, reference photos, and user-reviewed AI explanations. The current app adds four-language support and an Easy Mode with larger controls, spoken questions, and read-aloud answers.": {
+    "zh-Hans": "MedicineAI 最初是康莱德创新挑战赛项目，如今已成为整合用药计划、健康笔记、设备端文字识别、参考照片和经用户核对的 AI 解释的 iPhone 应用原型。当前应用加入了四种语言支持，以及具有更大控件、语音提问和回答朗读功能的简易模式。",
+    "fr": "Initialement créé pour le Conrad Challenge, MedicineAI est aujourd’hui un prototype d’application iPhone réunissant plannings de prise, notes de suivi, reconnaissance de texte sur l’appareil, photos de référence et explications IA vérifiées par l’utilisateur. L’application actuelle ajoute quatre langues et un mode simplifié avec de grands boutons, des questions dictées et la lecture des réponses à voix haute."
+  },
+  "Email, Google Scholar, and my résumé.": {
+    "zh-Hans": "邮箱、Google 学术与我的简历。",
+    "fr": "E-mail, Google Scholar et mon CV."
+  },
+  "Connect with Tony Xing by email or Google Scholar, or view his résumé.": {
+    "zh-Hans": "通过邮箱或 Google 学术联系 Tony Xing，或查看他的简历。",
+    "fr": "Contactez Tony Xing par e-mail ou Google Scholar, ou consultez son CV."
   }
 }
