@@ -2006,5 +2006,21 @@
   "Connect with Tony Xing by email or Google Scholar, or view his résumé.": {
     "zh-Hans": "通过邮箱或 Google 学术联系 Tony Xing，或查看他的简历。",
     "fr": "Contactez Tony Xing par e-mail ou Google Scholar, ou consultez son CV."
+  },
+  "MathWorks Math Modeling Challenge (M3)": {
+    "zh-Hans": "MathWorks 数学建模挑战赛（M3）",
+    "fr": "MathWorks Math Modeling Challenge (M3)"
+  },
+  "Successful in Triage": {
+    "zh-Hans": "初审通过",
+    "fr": "Présélection réussie"
+  },
+  "Multivariable Calculus": {
+    "zh-Hans": "多元微积分",
+    "fr": "Calcul à plusieurs variables"
+  },
+  "Student of the Year": {
+    "zh-Hans": "年度优秀学生",
+    "fr": "Élève de l’année"
   }
 }
