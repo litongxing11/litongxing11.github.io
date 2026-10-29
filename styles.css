@@ -36,6 +36,8 @@
 .teaching-story{margin-top:45px}
 .teaching-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
 .esports-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+.chess-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+.chess-gallery img{aspect-ratio:4/3;object-fit:cover}
 .research-poster{margin:28px 0 0}
 .feature-visual{margin:0;min-width:0}
 .intro a{text-underline-offset:3px;text-decoration-thickness:1px}
